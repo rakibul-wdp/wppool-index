@@ -8,6 +8,7 @@
   box-sizing: border-box;
 }
 
+// typography
 @mixin title($fontSize, $lineHeight, $color) {
   font-size: $fontSize;
   line-height: $lineHeight;
@@ -24,30 +25,20 @@
   font-weight: $fontWeight;
 }
 
-/* typography */
-.title-1 {
-  @include title(78px, 109.9px, "#fff");
-}
-.title-2 {
-  @include title(48px, 67.63px, "#191618");
-}
-.title-3 {
-  @include title(48px, 57.6px, "#191618");
-}
-.title-4 {
-  @include title(42px, 59.18px, "#fff");
-}
-.title-5 {
-  @include title(36px, 50.72px, "#fff");
-}
-.title-6 {
-  @include title(36px, 48.96px, "#000000");
-}
-.title-7 {
-  @include title(30px, 42.27px, "#7d7f81");
-}
-.title-8 {
-  @include title(30px, 36px, "#fc714d");
+$titleValues: (1, 78px, 109.9px, #fff), (2, 48px, 67.63px, #191618),
+  (3, 48px, 57.6px, #191618), (4, 42px, 59.18px, #fff), (5, 36px, 50.72px, #fff),
+  (6, 36px, 48.96px, #000000), (7, 30px, 42.27px, #7d7f81),
+  (8, 30px, 36px, #fc714d);
+
+@each $titleValue in $titleValues {
+  $index: nth($titleValue, 1);
+  $fontSize: nth($titleValue, 2);
+  $lineHeight: nth($titleValue, 3);
+  $color: nth($titleValue, 4);
+
+  .title-#{$index} {
+    @include title($fontSize, $lineHeight, $color);
+  }
 }
 
 .subtitle {
@@ -58,81 +49,48 @@
   font-weight: 400;
 }
 
-.paragraph-1 {
-  @include paragraph(21px, 25.2px, "#fff", "Messina Sans", 350);
-}
-.paragraph-2 {
-  @include paragraph(21px, 25.2px, "#2042b6", "Nantes", 400);
-}
-.paragraph-3 {
-  @include paragraph(20px, 30.12px, "#115cd9", "Neue Haas Unica W1G", 400);
-}
-.paragraph-4 {
-  @include paragraph(20px, 28px, "#191618", "Messina Sans", 400);
-}
-.paragraph-5 {
-  @include paragraph(20px, 24px, "#9fa0a1", "Messina Sans", 700);
-}
-.paragraph-6 {
-  @include paragraph(20px, 24px, "#191618", "Messina Sans", 350);
-}
-.paragraph-7 {
-  @include paragraph(18px, 21.6px, "#191618", "Messina Sans", 400);
-}
-.paragraph-8 {
-  @include paragraph(16px, 25.6px, "#191618", "Messina Sans", 350);
-}
-.paragraph-9 {
-  @include paragraph(16px, 24.1px, "#cdcdcd", "Neue Haas Unica W1G", 400);
-}
-.paragraph-10 {
-  @include paragraph(16px, 24px, "#191618", "Messina Sans", 350);
-}
-.paragraph-11 {
-  @include paragraph(16px, 23.09px, "#fff", "Messina Sans", 400);
-}
-.paragraph-12 {
-  @include paragraph(16px, 22.54px, "#fff", "Nantes", 400);
-}
-.paragraph-13 {
-  @include paragraph(16px, 22.4px, "#191618", "Nantes", 400);
-}
-.paragraph-14 {
-  @include paragraph(16px, 19.2px, "#000000", "Messina Sans", 700);
-}
-.paragraph-15 {
-  @include paragraph(16px, 19.2px, "#000000", "Nantes", 400);
-}
-.paragraph-16 {
-  @include paragraph(16px, 19.2px, "white", "Messina Sans", 400);
-}
-.paragraph-17 {
-  @include paragraph(14px, 21px, "#000000", "Inter", 700);
-}
-.paragraph-18 {
-  @include paragraph(14px, 21px, "#191618", "Inter", 400);
-}
-.paragraph-19 {
-  @include paragraph(14px, 21.08px, "#fff", "Neue Haas Unica W1G", 400);
-}
-.paragraph-20 {
-  @include paragraph(14px, 19.6px, "#2042b6", "Messina Sans", 400);
-}
-.paragraph-21 {
-  @include paragraph(14px, 19.04px, "#9fa0a1", "Messina Sans", 700);
-}
-.paragraph-22 {
-  @include paragraph(14px, 19.04px, "#000000", "Messina Sans", 400);
-}
-.paragraph-23 {
-  @include paragraph(14px, 16.8px, "#000000", "Messina Sans", 400);
-}
-.paragraph-24 {
-  @include paragraph(12px, 18.07px, "#191618", "Neue Haas Unica W1G", 400);
-}
-.paragraph-25 {
-  @include paragraph(12px, 17.32px, "#fff", "Messina Sans", 400);
-}
-.paragraph-26 {
-  @include paragraph(12px, 14.4px, "#191618", "Messina Sans", 400);
+$paragraphValues: (1, 21px, 25.2px, #fff, "Messina Sans", 350),
+  (2, 21px, 25.2px, #2042b6, "Nantes", 400),
+  (3, 20px, 30.12px, #115cd9, "Neue Haas Unica W1G", 400),
+  (4, 20px, 28px, #191618, "Messina Sans", 400),
+  (5, 20px, 24px, #9fa0a1, "Messina Sans", 700),
+  (6, 20px, 24px, #191618, "Messina Sans", 350),
+  (7, 18px, 21.6px, #191618, "Messina Sans", 400),
+  (8, 16px, 25.6px, #191618, "Messina Sans", 350),
+  (9, 16px, 24.1px, #cdcdcd, "Neue Haas Unica W1G", 400),
+  (10, 16px, 24px, #191618, "Messina Sans", 350),
+  (11, 16px, 23.09px, #fff, "Messina Sans", 400),
+  (12, 16px, 22.54px, #fff, "Nantes", 400),
+  (13, 16px, 22.4px, #191618, "Nantes", 400),
+  (14, 16px, 19.2px, #000000, "Messina Sans", 700),
+  (15, 16px, 19.2px, #000000, "Nantes", 400),
+  (16, 16px, 19.2px, #fff, "Messina Sans", 400),
+  (17, 14px, 21px, #000000, "Inter", 700),
+  (18, 14px, 21px, #191618, "Inter", 400),
+  (19, 14px, 21.08px, #fff, "Neue Haas Unica W1G", 400),
+  (20, 14px, 19.6px, #2042b6, "Messina Sans", 400),
+  (21, 14px, 19.04px, #9fa0a1, "Messina Sans", 700),
+  (22, 14px, 19.04px, #000000, "Messina Sans", 400),
+  (23, 14px, 16.8px, #000000, "Messina Sans", 400),
+  (24, 12px, 18.07px, #191618, "Neue Haas Unica W1G", 400),
+  (25, 12px, 17.32px, #fff, "Messina Sans", 400),
+  (26, 12px, 14.4px, #191618, "Messina Sans", 400);
+
+@each $paragraphValue in $paragraphValues {
+  $index: nth($paragraphValue, 1);
+  $fontSize: nth($paragraphValue, 2);
+  $lineHeight: nth($paragraphValue, 3);
+  $color: nth($paragraphValue, 4);
+  $fontFamily: nth($paragraphValue, 5);
+  $fontWeight: nth($paragraphValue, 6);
+
+  .paragraph-#{$index} {
+    @include paragraph(
+      $fontSize,
+      $lineHeight,
+      $color,
+      $fontFamily,
+      $fontWeight
+    );
+  }
 }

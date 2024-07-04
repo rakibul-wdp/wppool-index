@@ -6,11 +6,10 @@
   box-sizing: border-box;
 }
 
-/* typography */
 .title-1 {
   font-size: 78px;
   line-height: 109.9px;
-  color: "#fff";
+  color: #fff;
   font-family: "Nantes";
   font-weight: 400;
 }
@@ -18,7 +17,7 @@
 .title-2 {
   font-size: 48px;
   line-height: 67.63px;
-  color: "#191618";
+  color: #191618;
   font-family: "Nantes";
   font-weight: 400;
 }
@@ -26,7 +25,7 @@
 .title-3 {
   font-size: 48px;
   line-height: 57.6px;
-  color: "#191618";
+  color: #191618;
   font-family: "Nantes";
   font-weight: 400;
 }
@@ -34,7 +33,7 @@
 .title-4 {
   font-size: 42px;
   line-height: 59.18px;
-  color: "#fff";
+  color: #fff;
   font-family: "Nantes";
   font-weight: 400;
 }
@@ -42,7 +41,7 @@
 .title-5 {
   font-size: 36px;
   line-height: 50.72px;
-  color: "#fff";
+  color: #fff;
   font-family: "Nantes";
   font-weight: 400;
 }
@@ -50,7 +49,7 @@
 .title-6 {
   font-size: 36px;
   line-height: 48.96px;
-  color: "#000000";
+  color: #000000;
   font-family: "Nantes";
   font-weight: 400;
 }
@@ -58,7 +57,7 @@
 .title-7 {
   font-size: 30px;
   line-height: 42.27px;
-  color: "#7d7f81";
+  color: #7d7f81;
   font-family: "Nantes";
   font-weight: 400;
 }
@@ -66,7 +65,7 @@
 .title-8 {
   font-size: 30px;
   line-height: 36px;
-  color: "#fc714d";
+  color: #fc714d;
   font-family: "Nantes";
   font-weight: 400;
 }
@@ -82,7 +81,7 @@
 .paragraph-1 {
   font-size: 21px;
   line-height: 25.2px;
-  color: "#fff";
+  color: #fff;
   font-family: "Messina Sans";
   font-weight: 350;
 }
@@ -90,7 +89,7 @@
 .paragraph-2 {
   font-size: 21px;
   line-height: 25.2px;
-  color: "#2042b6";
+  color: #2042b6;
   font-family: "Nantes";
   font-weight: 400;
 }
@@ -98,7 +97,7 @@
 .paragraph-3 {
   font-size: 20px;
   line-height: 30.12px;
-  color: "#115cd9";
+  color: #115cd9;
   font-family: "Neue Haas Unica W1G";
   font-weight: 400;
 }
@@ -106,7 +105,7 @@
 .paragraph-4 {
   font-size: 20px;
   line-height: 28px;
-  color: "#191618";
+  color: #191618;
   font-family: "Messina Sans";
   font-weight: 400;
 }
@@ -114,7 +113,7 @@
 .paragraph-5 {
   font-size: 20px;
   line-height: 24px;
-  color: "#9fa0a1";
+  color: #9fa0a1;
   font-family: "Messina Sans";
   font-weight: 700;
 }
@@ -122,7 +121,7 @@
 .paragraph-6 {
   font-size: 20px;
   line-height: 24px;
-  color: "#191618";
+  color: #191618;
   font-family: "Messina Sans";
   font-weight: 350;
 }
@@ -130,7 +129,7 @@
 .paragraph-7 {
   font-size: 18px;
   line-height: 21.6px;
-  color: "#191618";
+  color: #191618;
   font-family: "Messina Sans";
   font-weight: 400;
 }
@@ -138,7 +137,7 @@
 .paragraph-8 {
   font-size: 16px;
   line-height: 25.6px;
-  color: "#191618";
+  color: #191618;
   font-family: "Messina Sans";
   font-weight: 350;
 }
@@ -146,7 +145,7 @@
 .paragraph-9 {
   font-size: 16px;
   line-height: 24.1px;
-  color: "#cdcdcd";
+  color: #cdcdcd;
   font-family: "Neue Haas Unica W1G";
   font-weight: 400;
 }
@@ -154,7 +153,7 @@
 .paragraph-10 {
   font-size: 16px;
   line-height: 24px;
-  color: "#191618";
+  color: #191618;
   font-family: "Messina Sans";
   font-weight: 350;
 }
@@ -162,7 +161,7 @@
 .paragraph-11 {
   font-size: 16px;
   line-height: 23.09px;
-  color: "#fff";
+  color: #fff;
   font-family: "Messina Sans";
   font-weight: 400;
 }
@@ -170,7 +169,7 @@
 .paragraph-12 {
   font-size: 16px;
   line-height: 22.54px;
-  color: "#fff";
+  color: #fff;
   font-family: "Nantes";
   font-weight: 400;
 }
@@ -178,7 +177,7 @@
 .paragraph-13 {
   font-size: 16px;
   line-height: 22.4px;
-  color: "#191618";
+  color: #191618;
   font-family: "Nantes";
   font-weight: 400;
 }
@@ -186,7 +185,7 @@
 .paragraph-14 {
   font-size: 16px;
   line-height: 19.2px;
-  color: "#000000";
+  color: #000000;
   font-family: "Messina Sans";
   font-weight: 700;
 }
@@ -194,7 +193,7 @@
 .paragraph-15 {
   font-size: 16px;
   line-height: 19.2px;
-  color: "#000000";
+  color: #000000;
   font-family: "Nantes";
   font-weight: 400;
 }
@@ -202,7 +201,7 @@
 .paragraph-16 {
   font-size: 16px;
   line-height: 19.2px;
-  color: "white";
+  color: #fff;
   font-family: "Messina Sans";
   font-weight: 400;
 }
@@ -210,7 +209,7 @@
 .paragraph-17 {
   font-size: 14px;
   line-height: 21px;
-  color: "#000000";
+  color: #000000;
   font-family: "Inter";
   font-weight: 700;
 }
@@ -218,7 +217,7 @@
 .paragraph-18 {
   font-size: 14px;
   line-height: 21px;
-  color: "#191618";
+  color: #191618;
   font-family: "Inter";
   font-weight: 400;
 }
@@ -226,7 +225,7 @@
 .paragraph-19 {
   font-size: 14px;
   line-height: 21.08px;
-  color: "#fff";
+  color: #fff;
   font-family: "Neue Haas Unica W1G";
   font-weight: 400;
 }
@@ -234,7 +233,7 @@
 .paragraph-20 {
   font-size: 14px;
   line-height: 19.6px;
-  color: "#2042b6";
+  color: #2042b6;
   font-family: "Messina Sans";
   font-weight: 400;
 }
@@ -242,7 +241,7 @@
 .paragraph-21 {
   font-size: 14px;
   line-height: 19.04px;
-  color: "#9fa0a1";
+  color: #9fa0a1;
   font-family: "Messina Sans";
   font-weight: 700;
 }
@@ -250,7 +249,7 @@
 .paragraph-22 {
   font-size: 14px;
   line-height: 19.04px;
-  color: "#000000";
+  color: #000000;
   font-family: "Messina Sans";
   font-weight: 400;
 }
@@ -258,7 +257,7 @@
 .paragraph-23 {
   font-size: 14px;
   line-height: 16.8px;
-  color: "#000000";
+  color: #000000;
   font-family: "Messina Sans";
   font-weight: 400;
 }
@@ -266,7 +265,7 @@
 .paragraph-24 {
   font-size: 12px;
   line-height: 18.07px;
-  color: "#191618";
+  color: #191618;
   font-family: "Neue Haas Unica W1G";
   font-weight: 400;
 }
@@ -274,7 +273,7 @@
 .paragraph-25 {
   font-size: 12px;
   line-height: 17.32px;
-  color: "#fff";
+  color: #fff;
   font-family: "Messina Sans";
   font-weight: 400;
 }
@@ -282,7 +281,7 @@
 .paragraph-26 {
   font-size: 12px;
   line-height: 14.4px;
-  color: "#191618";
+  color: #191618;
   font-family: "Messina Sans";
   font-weight: 400;
 }
@@ -323,4 +322,22 @@ nav ul li a {
 
 h1 {
   font-size: 24px;
+}
+
+.primary-extend, .secondary-extend {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  background-color: indigo;
+  color: #fff;
+}
+.primary-extend:hover, .secondary-extend:hover {
+  text-decoration: underline;
+}
+
+.secondary-extend {
+  background-color: lightslategray;
+}
+.secondary-extend:hover {
+  border: 3px solid black;
 }/*# sourceMappingURL=style.css.map */
