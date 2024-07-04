@@ -1,0 +1,60 @@
+@import "./global";
+@import "./variables";
+
+header {
+  background-color: $primary-color;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 30px 8px 18px;
+    background-color: gray;
+
+    .wppool-logo {
+      width: 200.52px;
+      height: 34.63px;
+    }
+  }
+}
+
+main {
+  background-image: url("../../assets/images/hero-bg-1.png");
+  background-size: 549px 542px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  padding: 16px 44px 40px 44px;
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 50px;
+
+    div {
+      h3 {
+        margin-bottom: -5px;
+      }
+    }
+  }
+
+  .main__content {
+    background-image: url("../../assets//images/hero-bg-2.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 542px;
+
+    h1 {
+      margin-bottom: -6px;
+    }
+  }
+}
