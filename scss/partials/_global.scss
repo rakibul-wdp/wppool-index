@@ -8,6 +8,17 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: $secondary-color;
+}
+
+.container {
+  max-width: 1366px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 // typography
 @mixin title($fontSize, $lineHeight, $color) {
   font-size: $fontSize;
