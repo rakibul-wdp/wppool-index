@@ -1,0 +1,234 @@
+@import "variables";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin title($fontSize, $lineHeight, $color) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $color;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+/* typography */
+.title-1 {
+  @include title(78px, 109.9px, "#fff");
+}
+.title-2 {
+  @include title(48px, 67.63px, "#191618");
+}
+.title-3 {
+  @include title(48px, 57.6px, "#191618");
+}
+.title-4 {
+  @include title(42px, 59.18px, "#fff");
+}
+.title-5 {
+  @include title(36px, 50.72px, "#fff");
+}
+.title-6 {
+  @include title(36px, 48.96px, "#000000");
+}
+.title-7 {
+  @include title(30px, 42.27px, "#7d7f81");
+}
+.title-8 {
+  @include title(30px, 36px, "#fc714d");
+}
+
+.subtitle {
+  font-size: 24px;
+  line-height: 28.8px;
+  color: #191618;
+  font-family: Nantes;
+  font-weight: 400;
+}
+
+.paragraph-1 {
+  font-size: 21px;
+  line-height: 25.2px;
+  color: white;
+  font: Messina Sans;
+  font-weight: 350;
+}
+.paragraph-2 {
+  font-size: 21px;
+  line-height: 25.2px;
+  color: #2042b6;
+  font: Nantes;
+  font-weight: 400;
+}
+.paragraph-3 {
+  font-size: 20px;
+  line-height: 30.12px;
+  color: #115cd9;
+  font: Neue Haas Unica W1G;
+  font-weight: 400;
+}
+.paragraph-4 {
+  font-size: 20px;
+  line-height: 28px;
+  color: #191618;
+  font: Messina Sans;
+  font-weight: 400;
+}
+.paragraph-5 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #9fa0a1;
+  font: Messina Sans;
+  font-weight: 700;
+}
+.paragraph-6 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #191618;
+  font: Messina Sans;
+  font-weight: 350;
+}
+.paragraph-7 {
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #191618;
+  font: Messina Sans;
+  font-weight: 400;
+}
+.paragraph-8 {
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #191618;
+  font: Messina Sans;
+  font-weight: 350;
+}
+.paragraph-9 {
+  font-size: 16px;
+  line-height: 24.1px;
+  color: #cdcdcd;
+  font: Neue Haas Unica W1G;
+  font-weight: 400;
+}
+.paragraph-10 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #191618;
+  font: Messina Sans;
+  font-weight: 350;
+}
+.paragraph-11 {
+  font-size: 16px;
+  line-height: 23.09px;
+  color: white;
+  font: Messina Sans;
+  font-weight: 400;
+}
+.paragraph-12 {
+  font-size: 16px;
+  line-height: 22.54px;
+  color: white;
+  font: Nantes;
+  font-weight: 400;
+}
+.paragraph-13 {
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #191618;
+  font: Nantes;
+  font-weight: 400;
+}
+.paragraph-14 {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #000000;
+  font: Messina Sans;
+  font-weight: 700;
+}
+.paragraph-15 {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #000000;
+  font: Nantes;
+  font-weight: 400;
+}
+.paragraph-16 {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: white;
+  font: Messina Sans;
+  font-weight: 400;
+}
+.paragraph-17 {
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  font: Inter;
+  font-weight: 700;
+}
+.paragraph-18 {
+  font-size: 14px;
+  line-height: 21px;
+  color: #191618;
+  font: Inter;
+  font-weight: 400;
+}
+.paragraph-19 {
+  font-size: 14px;
+  line-height: 21.08px;
+  color: white;
+  font: Neue Haas Unica W1G;
+  font-weight: 400;
+}
+.paragraph-20 {
+  font-size: 14px;
+  line-height: 19.6px;
+  color: #2042b6;
+  font: Messina Sans;
+  font-weight: 400;
+}
+.paragraph-21 {
+  font-size: 14px;
+  line-height: 19.04px;
+  color: #9fa0a1;
+  font: Messina Sans;
+  font-weight: 700;
+}
+.paragraph-22 {
+  font-size: 14px;
+  line-height: 19.04px;
+  color: #000000;
+  font: Messina Sans;
+  font-weight: 400;
+}
+.paragraph-23 {
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #000000;
+  font: Messina Sans;
+  font-weight: 400;
+}
+.paragraph-24 {
+  font-size: 12px;
+  line-height: 18.07px;
+  color: #191618;
+  font: Neue Haas Unica W1G;
+  font-weight: 400;
+}
+.paragraph-25 {
+  font-size: 12px;
+  line-height: 17.32px;
+  color: white;
+  font: Messina Sans;
+  font-weight: 400;
+}
+.paragraph-26 {
+  font-size: 12px;
+  line-height: 14.4px;
+  color: #191618;
+  font: Messina Sans;
+  font-weight: 400;
+}

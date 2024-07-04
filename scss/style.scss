@@ -1,0 +1,55 @@
+@import "./partials/global";
+@import "./partials/variables";
+
+// $weight: (
+//   "thin": 100,
+//   "regular": 400,
+//   "medium": 500,
+//   "bold": 700,
+// );
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+
+      a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 15px;
+        background-color: cadetblue;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.main {
+  padding: 50px;
+  background-color: rebeccapurple;
+
+  #{&}__paragraph {
+    color: #fff;
+  }
+
+  #{&}__link {
+    display: inline-block;
+    padding: 15px;
+    background-color: salmon;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+h1 {
+  font-size: 24px;
+  // font-weight: map-get($weight: "regular");
+}
