@@ -1,0 +1,53 @@
+@import "./global";
+@import "./variables";
+
+.companies {
+  .companies__main {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 41px 30px 11px 30px;
+    margin-bottom: 40px;
+
+    .companies__header {
+      @include displayProperty(row, center, space-between, 0);
+      margin-bottom: 52px;
+
+      div {
+        @include displayProperty(row, center, start, 9px);
+        border: 1px solid #dadada;
+        border-radius: 8px;
+        padding: 17px 0px 17px 19px;
+        background-color: $secondary-light-color;
+
+        input {
+          border: none;
+          background-color: $secondary-light-color;
+        }
+      }
+    }
+
+    .companies__table {
+      height: 25vh;
+      overflow-y: auto;
+
+      table {
+        width: 100%;
+
+        tr {
+          th {
+            button {
+              @include displayProperty(row, center, space-between, 10px);
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .companies__buttons {
+    background-color: $secondary-color;
+    @include displayProperty(row, center, center, 12px);
+    margin-bottom: 151px;
+  }
+}

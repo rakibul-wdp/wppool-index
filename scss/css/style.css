@@ -1058,6 +1058,360 @@ body {
   color: #191618;
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ededed;
+}
+
+.container {
+  max-width: 1366px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px 25px 0 25px;
+}
+
+.title-1 {
+  font-size: 78px;
+  line-height: 109.9px;
+  color: #fff;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.title-2 {
+  font-size: 48px;
+  line-height: 67.63px;
+  color: #191618;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.title-3 {
+  font-size: 48px;
+  line-height: 57.6px;
+  color: #191618;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.title-4 {
+  font-size: 42px;
+  line-height: 59.18px;
+  color: #fff;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.title-5 {
+  font-size: 36px;
+  line-height: 50.72px;
+  color: #fff;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.title-6 {
+  font-size: 36px;
+  line-height: 48.96px;
+  color: #000000;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.title-7 {
+  font-size: 30px;
+  line-height: 42.27px;
+  color: #7d7f81;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.title-8 {
+  font-size: 30px;
+  line-height: 36px;
+  color: #fc714d;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 24px;
+  line-height: 28.8px;
+  color: #191618;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.paragraph-1 {
+  font-size: 21px;
+  line-height: 25.2px;
+  color: #fff;
+  font-family: "Messina Sans";
+  font-weight: 350;
+}
+
+.paragraph-2 {
+  font-size: 21px;
+  line-height: 25.2px;
+  color: #2042b6;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.paragraph-3 {
+  font-size: 20px;
+  line-height: 30.12px;
+  color: #115cd9;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+}
+
+.paragraph-4 {
+  font-size: 20px;
+  line-height: 28px;
+  color: #191618;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-5 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #9fa0a1;
+  font-family: "Messina Sans";
+  font-weight: 700;
+}
+
+.paragraph-6 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #191618;
+  font-family: "Messina Sans";
+  font-weight: 350;
+}
+
+.paragraph-7 {
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #191618;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-8 {
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #191618;
+  font-family: "Messina Sans";
+  font-weight: 350;
+}
+
+.paragraph-9 {
+  font-size: 16px;
+  line-height: 24.1px;
+  color: #cdcdcd;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+}
+
+.paragraph-10 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #191618;
+  font-family: "Messina Sans";
+  font-weight: 350;
+}
+
+.paragraph-11 {
+  font-size: 16px;
+  line-height: 23.09px;
+  color: #fff;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-12 {
+  font-size: 16px;
+  line-height: 22.54px;
+  color: #fff;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.paragraph-13 {
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #191618;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.paragraph-14 {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #000000;
+  font-family: "Messina Sans";
+  font-weight: 700;
+}
+
+.paragraph-15 {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #000000;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.paragraph-16 {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #fff;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-17 {
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  font-family: "Inter";
+  font-weight: 700;
+}
+
+.paragraph-18 {
+  font-size: 14px;
+  line-height: 21px;
+  color: #191618;
+  font-family: "Inter";
+  font-weight: 400;
+}
+
+.paragraph-19 {
+  font-size: 14px;
+  line-height: 21.08px;
+  color: #fff;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+}
+
+.paragraph-20 {
+  font-size: 14px;
+  line-height: 19.6px;
+  color: #2042b6;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-21 {
+  font-size: 14px;
+  line-height: 19.04px;
+  color: #9fa0a1;
+  font-family: "Messina Sans";
+  font-weight: 700;
+}
+
+.paragraph-22 {
+  font-size: 14px;
+  line-height: 19.04px;
+  color: #000000;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-23 {
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #000000;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-24 {
+  font-size: 12px;
+  line-height: 18.07px;
+  color: #191618;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+}
+
+.paragraph-25 {
+  font-size: 12px;
+  line-height: 17.32px;
+  color: #fff;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-26 {
+  font-size: 12px;
+  line-height: 14.4px;
+  color: #191618;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.companies .companies__main {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 41px 30px 11px 30px;
+  margin-bottom: 40px;
+}
+.companies .companies__main .companies__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  margin-bottom: 52px;
+}
+.companies .companies__main .companies__header div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 9px;
+  border: 1px solid #dadada;
+  border-radius: 8px;
+  padding: 17px 0px 17px 19px;
+  background-color: #f3f3f3;
+}
+.companies .companies__main .companies__header div input {
+  border: none;
+  background-color: #f3f3f3;
+}
+.companies .companies__main .companies__table {
+  height: 25vh;
+  overflow-y: auto;
+}
+.companies .companies__main .companies__table table {
+  width: 100%;
+}
+.companies .companies__main .companies__table table tr th button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border: none;
+}
+.companies .companies__buttons {
+  background-color: #ededed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 151px;
+}
+
 nav ul {
   margin: 0;
   padding: 0;

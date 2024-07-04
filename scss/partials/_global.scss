@@ -20,6 +20,14 @@ body {
   padding: 25px 25px 0 25px;
 }
 
+@mixin displayProperty($flexDirection, $alignItems, $justifyContent, $gap) {
+  display: flex;
+  flex-direction: $flexDirection;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+  gap: $gap;
+}
+
 // typography
 @mixin title($fontSize, $lineHeight, $color) {
   font-size: $fontSize;
