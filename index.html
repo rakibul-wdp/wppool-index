@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="./scss/css/style.css" />
   </head>
   <body class="container">
-    <header>
+    <!-- header -->
+    <header class="header">
       <nav>
         <img
           src="./assets/icons/wppool-logo.svg"
@@ -57,6 +58,111 @@
       </main>
     </header>
 
+    <!-- chart -->
+    <section class="chart">
+      <aside>
+        <button>
+          <p class="paragraph-12">The Index</p>
+          <span>-</span>
+        </button>
+        <button>
+          <p class="paragraph-12">The Index Tab Two</p>
+          <span class="paragraph-15">+</span>
+        </button>
+        <button>
+          <p class="paragraph-12">The Index Tab Three</p>
+          <span class="paragraph-15">+</span>
+        </button>
+        <button>
+          <p class="paragraph-12">The Index Tab Four</p>
+          <span class="paragraph-15">+</span>
+        </button>
+        <button>
+          <p class="paragraph-12">The Index Five</p>
+          <span class="paragraph-15">+</span>
+        </button>
+      </aside>
+      <main class="chart__main">
+        <div class="chart__main_title">
+          <img src="./assets/icons/chart-title.svg" alt="rectangle" />
+          <h3 class="title-5">The WPPOOL Index</h3>
+        </div>
+        <div class="chart__main_index">
+          <div>
+            <h4 class="title-8">+66.2%</h4>
+            <div>
+              <p class="paragraph-26">WPPOOL Index</p>
+              <span></span>
+            </div>
+          </div>
+          <div>
+            <h4 class="title-8">+26.6%</h4>
+            <div>
+              <p class="paragraph-26">Google Index</p>
+              <span></span>
+            </div>
+          </div>
+          <div>
+            <h4 class="title-8">+34.1%</h4>
+            <div>
+              <p class="paragraph-26">Microsoft</p>
+              <span></span>
+            </div>
+          </div>
+          <div>
+            <h4 class="title-8">+17%</h4>
+            <div>
+              <p class="paragraph-26">Twitter Index</p>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="chart__main_handle">
+          <div class="chart__main_handle-large">
+            <button>
+              <p class="paragraph-26">Selectors</p>
+              <img
+                src="./assets/icons/arrow_drop_down.svg"
+                alt="arrow drop down"
+              />
+            </button>
+            <button>
+              <p class="paragraph-26">Types of IPO</p>
+              <img
+                src="./assets/icons/arrow_drop_down.svg"
+                alt="arrow drop down"
+              />
+            </button>
+          </div>
+          <div class="chart__main_handle-small">
+            <button>1Y</button><button>YTD</button><button>6M</button
+            ><button>1M</button><button>1W</button>
+          </div>
+        </div>
+        <div class="chart__main_visual">
+          <canvas id="myChart" style="width: 100%"></canvas>
+          <div>
+            <div>
+              <span></span>
+              <p class="paragraph-25">WPPOOL</p>
+            </div>
+            <div>
+              <span></span>
+              <p class="paragraph-25">Google</p>
+            </div>
+            <div>
+              <span></span>
+              <p class="paragraph-25">Microsoft</p>
+            </div>
+            <div>
+              <span></span>
+              <p class="paragraph-25">Twitter</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
@@ -81,7 +187,11 @@
     <a href="#" class="primary-extend">Primary</a>
     <a href="#" class="secondary-extend">Secondary</a>
 
+    <div style="height: 100vh"></div>
+
     <!-- javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
     <script src="./javascript/script.js"></script>
   </body>
 </html>

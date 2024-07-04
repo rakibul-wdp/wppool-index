@@ -598,22 +598,21 @@ body {
   font-weight: 400;
 }
 
-header {
+.header {
   background-color: #2042b6;
 }
-header nav {
+.header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 8px 30px 8px 18px;
   background-color: gray;
 }
-header nav .wppool-logo {
+.header nav .wppool-logo {
   width: 200.52px;
   height: 34.63px;
 }
-
-main {
+.header main {
   background-image: url("../../assets/images/hero-bg-1.png");
   background-size: 549px 542px;
   background-repeat: no-repeat;
@@ -623,17 +622,17 @@ main {
   justify-content: start;
   padding: 16px 44px 40px 44px;
 }
-main aside {
+.header main aside {
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
   gap: 50px;
 }
-main aside div h3 {
+.header main aside div h3 {
   margin-bottom: -5px;
 }
-main .main__content {
+.header main .main__content {
   background-image: url("../../assets//images/hero-bg-2.svg");
   background-size: auto;
   background-repeat: no-repeat;
@@ -644,8 +643,419 @@ main .main__content {
   justify-content: center;
   height: 542px;
 }
-main .main__content h1 {
+.header main .main__content h1 {
   margin-bottom: -6px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ededed;
+}
+
+.container {
+  max-width: 1366px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px 25px 0 25px;
+}
+
+.title-1 {
+  font-size: 78px;
+  line-height: 109.9px;
+  color: #fff;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.title-2 {
+  font-size: 48px;
+  line-height: 67.63px;
+  color: #191618;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.title-3 {
+  font-size: 48px;
+  line-height: 57.6px;
+  color: #191618;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.title-4 {
+  font-size: 42px;
+  line-height: 59.18px;
+  color: #fff;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.title-5 {
+  font-size: 36px;
+  line-height: 50.72px;
+  color: #fff;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.title-6 {
+  font-size: 36px;
+  line-height: 48.96px;
+  color: #000000;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.title-7 {
+  font-size: 30px;
+  line-height: 42.27px;
+  color: #7d7f81;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.title-8 {
+  font-size: 30px;
+  line-height: 36px;
+  color: #fc714d;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 24px;
+  line-height: 28.8px;
+  color: #191618;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.paragraph-1 {
+  font-size: 21px;
+  line-height: 25.2px;
+  color: #fff;
+  font-family: "Messina Sans";
+  font-weight: 350;
+}
+
+.paragraph-2 {
+  font-size: 21px;
+  line-height: 25.2px;
+  color: #2042b6;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.paragraph-3 {
+  font-size: 20px;
+  line-height: 30.12px;
+  color: #115cd9;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+}
+
+.paragraph-4 {
+  font-size: 20px;
+  line-height: 28px;
+  color: #191618;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-5 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #9fa0a1;
+  font-family: "Messina Sans";
+  font-weight: 700;
+}
+
+.paragraph-6 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #191618;
+  font-family: "Messina Sans";
+  font-weight: 350;
+}
+
+.paragraph-7 {
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #191618;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-8 {
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #191618;
+  font-family: "Messina Sans";
+  font-weight: 350;
+}
+
+.paragraph-9 {
+  font-size: 16px;
+  line-height: 24.1px;
+  color: #cdcdcd;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+}
+
+.paragraph-10 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #191618;
+  font-family: "Messina Sans";
+  font-weight: 350;
+}
+
+.paragraph-11 {
+  font-size: 16px;
+  line-height: 23.09px;
+  color: #fff;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-12 {
+  font-size: 16px;
+  line-height: 22.54px;
+  color: #fff;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.paragraph-13 {
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #191618;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.paragraph-14 {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #000000;
+  font-family: "Messina Sans";
+  font-weight: 700;
+}
+
+.paragraph-15 {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #000000;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.paragraph-16 {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #fff;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-17 {
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  font-family: "Inter";
+  font-weight: 700;
+}
+
+.paragraph-18 {
+  font-size: 14px;
+  line-height: 21px;
+  color: #191618;
+  font-family: "Inter";
+  font-weight: 400;
+}
+
+.paragraph-19 {
+  font-size: 14px;
+  line-height: 21.08px;
+  color: #fff;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+}
+
+.paragraph-20 {
+  font-size: 14px;
+  line-height: 19.6px;
+  color: #2042b6;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-21 {
+  font-size: 14px;
+  line-height: 19.04px;
+  color: #9fa0a1;
+  font-family: "Messina Sans";
+  font-weight: 700;
+}
+
+.paragraph-22 {
+  font-size: 14px;
+  line-height: 19.04px;
+  color: #000000;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-23 {
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #000000;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-24 {
+  font-size: 12px;
+  line-height: 18.07px;
+  color: #191618;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+}
+
+.paragraph-25 {
+  font-size: 12px;
+  line-height: 17.32px;
+  color: #fff;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-26 {
+  font-size: 12px;
+  line-height: 14.4px;
+  color: #191618;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.chart {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 65px 20px 23px;
+  margin-bottom: 60px;
+}
+.chart aside {
+  background-color: #eff3f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.chart aside button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chart .chart__main .chart__main_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.chart .chart__main .chart__main_title h3 {
+  color: #191618;
+}
+.chart .chart__main .chart__main_index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 17px;
+  padding-bottom: 19px;
+}
+.chart .chart__main .chart__main_index div {
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  padding: 10px 10px 10px 14px;
+}
+.chart .chart__main .chart__main_index div div p {
+  width: 95%;
+  text-align: end;
+}
+.chart .chart__main .chart__main_index div div span {
+  display: inline-block;
+  width: 4px;
+  height: 30px;
+  color: #fc714d;
+  border-radius: 1px;
+}
+.chart .chart__main .chart__main_handle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 19px;
+}
+.chart .chart__main .chart__main_handle .chart__main_handle-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chart .chart__main .chart__main_handle .chart__main_handle-large button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chart .chart__main .chart__main_handle .chart__main_handle-small {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chart .chart__main .chart__main_visual div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.chart .chart__main .chart__main_visual div div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.chart .chart__main .chart__main_visual div div span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+.chart .chart__main .chart__main_visual div div:nth-of-type(1) span {
+  background-color: #fc714d;
+}
+.chart .chart__main .chart__main_visual div div:nth-of-type(2) span {
+  background-color: #615de3;
+}
+.chart .chart__main .chart__main_visual div div:nth-of-type(3) span {
+  background-color: #afcd80;
+}
+.chart .chart__main .chart__main_visual div div:nth-of-type(4) span {
+  background-color: #6f34a1;
+}
+.chart .chart__main .chart__main_visual div div p {
+  color: #191618;
 }
 
 nav ul {
