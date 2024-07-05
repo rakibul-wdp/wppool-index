@@ -6,9 +6,15 @@
 @import "./partials/future";
 @import "./partials/carousel";
 @import "./partials/stories";
+@import "./partials/about";
 
-.divider {
+.divider-1 {
   margin: 100px 68px 80px 68px;
+  border: 1px solid #90b8f0;
+}
+
+.divider-2 {
+  margin: 100px 68px 126px 68px;
   border: 1px solid #90b8f0;
 }
 
