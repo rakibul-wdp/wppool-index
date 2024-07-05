@@ -1739,6 +1739,423 @@ body {
   border-radius: 6px;
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ededed;
+}
+
+.container {
+  max-width: 1366px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px 25px 0 25px;
+}
+
+.title-1 {
+  font-size: 78px;
+  line-height: 109.9px;
+  color: #fff;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.title-2 {
+  font-size: 48px;
+  line-height: 67.63px;
+  color: #191618;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.title-3 {
+  font-size: 48px;
+  line-height: 57.6px;
+  color: #191618;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.title-4 {
+  font-size: 42px;
+  line-height: 59.18px;
+  color: #fff;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.title-5 {
+  font-size: 36px;
+  line-height: 50.72px;
+  color: #fff;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.title-6 {
+  font-size: 36px;
+  line-height: 48.96px;
+  color: #000000;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.title-7 {
+  font-size: 30px;
+  line-height: 42.27px;
+  color: #7d7f81;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.title-8 {
+  font-size: 30px;
+  line-height: 36px;
+  color: #fc714d;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 24px;
+  line-height: 28.8px;
+  color: #191618;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.paragraph-1 {
+  font-size: 21px;
+  line-height: 25.2px;
+  color: #fff;
+  font-family: "Messina Sans";
+  font-weight: 350;
+}
+
+.paragraph-2 {
+  font-size: 21px;
+  line-height: 25.2px;
+  color: #2042b6;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.paragraph-3 {
+  font-size: 20px;
+  line-height: 30.12px;
+  color: #115cd9;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+}
+
+.paragraph-4 {
+  font-size: 20px;
+  line-height: 28px;
+  color: #191618;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-5 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #9fa0a1;
+  font-family: "Messina Sans";
+  font-weight: 700;
+}
+
+.paragraph-6 {
+  font-size: 20px;
+  line-height: 24px;
+  color: #191618;
+  font-family: "Messina Sans";
+  font-weight: 350;
+}
+
+.paragraph-7 {
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #191618;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-8 {
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #191618;
+  font-family: "Messina Sans";
+  font-weight: 350;
+}
+
+.paragraph-9 {
+  font-size: 16px;
+  line-height: 24.1px;
+  color: #cdcdcd;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+}
+
+.paragraph-10 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #191618;
+  font-family: "Messina Sans";
+  font-weight: 350;
+}
+
+.paragraph-11 {
+  font-size: 16px;
+  line-height: 23.09px;
+  color: #fff;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-12 {
+  font-size: 16px;
+  line-height: 22.54px;
+  color: #fff;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.paragraph-13 {
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #191618;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.paragraph-14 {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #000000;
+  font-family: "Messina Sans";
+  font-weight: 700;
+}
+
+.paragraph-15 {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #000000;
+  font-family: "Nantes";
+  font-weight: 400;
+}
+
+.paragraph-16 {
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #fff;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-17 {
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  font-family: "Inter";
+  font-weight: 700;
+}
+
+.paragraph-18 {
+  font-size: 14px;
+  line-height: 21px;
+  color: #191618;
+  font-family: "Inter";
+  font-weight: 400;
+}
+
+.paragraph-19 {
+  font-size: 14px;
+  line-height: 21.08px;
+  color: #fff;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+}
+
+.paragraph-20 {
+  font-size: 14px;
+  line-height: 19.6px;
+  color: #2042b6;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-21 {
+  font-size: 14px;
+  line-height: 19.04px;
+  color: #9fa0a1;
+  font-family: "Messina Sans";
+  font-weight: 700;
+}
+
+.paragraph-22 {
+  font-size: 14px;
+  line-height: 19.04px;
+  color: #000000;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-23 {
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #000000;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-24 {
+  font-size: 12px;
+  line-height: 18.07px;
+  color: #191618;
+  font-family: "Neue Haas Unica W1G";
+  font-weight: 400;
+}
+
+.paragraph-25 {
+  font-size: 12px;
+  line-height: 17.32px;
+  color: #fff;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.paragraph-26 {
+  font-size: 12px;
+  line-height: 14.4px;
+  color: #191618;
+  font-family: "Messina Sans";
+  font-weight: 400;
+}
+
+.carousel-container {
+  margin-bottom: 191px;
+}
+.carousel-container div {
+  margin-bottom: 20px;
+}
+.carousel-container div button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  background-color: #2042b6;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.carousel-container .wrapper {
+  width: 100%;
+  position: relative;
+}
+.carousel-container .wrapper .carousel-arrow {
+  top: 88%;
+  height: 14.15px;
+  width: 15.74px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 36px 36px 0px rgba(0, 0, 0, 0.1215686275);
+}
+.carousel-container .wrapper .left-arrow {
+  left: 5px;
+}
+.carousel-container .wrapper .right-arrow {
+  transform: rotate(180deg);
+  left: 80px;
+}
+.carousel-container .wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(50% - 80px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel-container .wrapper .carousel .carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel-container .wrapper .carousel .carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel-container .wrapper .carousel .carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel-container .wrapper .carousel .carousel.dragging .card {
+  cursor: grab;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.carousel-container .wrapper .carousel .carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-container .wrapper .carousel .carousel .card {
+  scroll-snap-align: start;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carousel-container .wrapper .carousel .card .img img {
+  width: 580px;
+  height: 326px;
+  border-radius: 6px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carousel-container .wrapper .carousel-control {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  padding: 0 163px;
+}
+.carousel-container .wrapper .carousel-control div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+.carousel-container .wrapper .carousel-control div p {
+  color: black;
+}
+@media screen and (max-width: 900px) {
+  .carousel-container .wrapper .carousel {
+    grid-auto-columns: calc(50% - 9px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .carousel-container .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+
 nav ul {
   margin: 0;
   padding: 0;
