@@ -1,3 +1,37 @@
+// navbar
+document.addEventListener("DOMContentLoaded", () => {
+  const navbar = document.getElementById("navbar");
+
+  const handleScroll = () => {
+    if (window.scrollY > 10) {
+      navbar.classList.add("bg-white");
+      navbar.classList.remove("bg-transparent");
+    } else {
+      navbar.classList.add("bg-transparent");
+      navbar.classList.remove("bg-white");
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  handleScroll();
+});
+
+// navbar menu button
+document.addEventListener("DOMContentLoaded", () => {
+  const navMenuButton = document.getElementById("nav-menu-btn");
+  const navMenu = document.getElementById("responsive-menu");
+  const menuCrossButton = document.getElementById("menu-cross-btn");
+
+  navMenuButton.addEventListener("click", () => {
+    navMenu.classList.add("show");
+  });
+
+  menuCrossButton.addEventListener("click", () => {
+    navMenu.classList.remove("show");
+  });
+});
+
+// chart
 const xValues = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
 
 const data = {

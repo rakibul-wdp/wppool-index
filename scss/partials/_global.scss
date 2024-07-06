@@ -20,6 +20,13 @@ body {
   gap: $gap;
 }
 
+@mixin primaryButton($PT, $PR, $PB, $PL) {
+  background-color: $primary-color;
+  padding: $PT $PR $PB $PL;
+  border: none;
+  border-radius: 9999px;
+}
+
 // typography
 @mixin title($fontSize, $lineHeight, $color) {
   font-size: $fontSize;

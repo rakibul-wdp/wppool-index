@@ -4,7 +4,7 @@
 .footer {
   background-color: $secondary-deep-color;
   @include displayProperty(row, center, space-between, 83px);
-  padding: 77px 77px 73px 93px;
+  padding: 77px 93px 73px 93px;
 
   .footer__description {
     h3 {

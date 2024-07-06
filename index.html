@@ -16,18 +16,77 @@
     <!-- header or hero -->
     <header class="header">
       <div class="header-container">
-        <nav>
+        <nav id="navbar">
           <img
             src="./assets/icons/wppool-logo.svg"
             alt="wppool-logo"
             class="wppool-logo"
           />
+          <img
+            src="./assets/icons/wppool-logo-dark.svg"
+            alt="wppool-logo"
+            class="wppool-logo-dark"
+          />
           <div>
-            <img src="./assets/icons/share.svg" alt="share icon" />
-            <button>Download the 2024 Report</button>
-            <button>
-              <img src="./assets/icons/menu.svg" alt="" />
+            <img
+              class="nav-share-icon"
+              src="./assets/icons/share.svg"
+              alt="share icon"
+            />
+            <img
+              class="nav-share-icon-dark"
+              src="./assets/icons/share-dark.svg"
+              alt="share icon"
+            />
+            <button class="nav-btn">
+              <p class="paragraph-25">Download the 2024 Report</p>
             </button>
+            <button class="nav-menu-btn" id="nav-menu-btn">
+              <img class="menu-btn-icon" src="./assets/icons/menu.svg" alt="" />
+              <img
+                class="menu-btn-icon-dark"
+                src="./assets/icons/menu-dark.svg"
+                alt=""
+              />
+            </button>
+
+            <div class="responsive-menu" id="responsive-menu">
+              <div class="responsive-menu-header">
+                <img
+                  class="responsive-menu-share"
+                  src="./assets/icons/share.svg"
+                  alt="share"
+                />
+                <button class="primary-button">
+                  <p class="paragraph-25">Download the 2024 Report</p>
+                </button>
+                <button id="menu-cross-btn">
+                  <img src="./assets/icons/menu-cross.svg" alt="menu cross" />
+                </button>
+              </div>
+              <div class="responsive-menu-items">
+                <ul>
+                  <li><a class="paragraph-7" href="#">The WPPOOL Index</a></li>
+                  <li><a class="paragraph-7" href="#">All Companies</a></li>
+                  <li>
+                    <a class="paragraph-7" href="#"
+                      >Potential Future Listings</a
+                    >
+                  </li>
+                  <li><a class="paragraph-7" href="#">State of USA</a></li>
+                  <li><a class="paragraph-7" href="#">Stories & Ideas</a></li>
+                  <li><a class="paragraph-7" href="#">About WPPOOL</a></li>
+                  <li>
+                    <a class="paragraph-7" href="#"
+                      >WPPOOL Portfolio Companies</a
+                    >
+                  </li>
+                  <li class="responsive-menu-item-last">
+                    <a class="paragraph-2" href="#">Visit WPPOOL</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </nav>
 
