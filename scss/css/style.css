@@ -1,3 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@font-face {
+  font-family: "Nantes";
+  src: url("../../assets/fonts/Nantes-Regular.ttf");
+}
+@font-face {
+  font-family: "Messina Sans";
+  src: url("../../assets/fonts/MessinaSans-Regular.ttf"), url("../../assets/fonts/MessinaSans-Bold.ttf"), url("../../assets/fonts/MessinaSans-Book.ttf");
+}
+@font-face {
+  font-family: "Neue Haas Unica W1G";
+  src: url("../../assets/fonts/NeueHaasUnicaW1G-Regular.otf");
+}
 *,
 *::before,
 *::after {
@@ -290,6 +311,18 @@ body {
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "Nantes";
+  src: url("../../assets/fonts/Nantes-Regular.ttf");
+}
+@font-face {
+  font-family: "Messina Sans";
+  src: url("../../assets/fonts/MessinaSans-Regular.ttf"), url("../../assets/fonts/MessinaSans-Bold.ttf"), url("../../assets/fonts/MessinaSans-Book.ttf");
+}
+@font-face {
+  font-family: "Neue Haas Unica W1G";
+  src: url("../../assets/fonts/NeueHaasUnicaW1G-Regular.otf");
+}
 *,
 *::before,
 *::after {
@@ -761,6 +794,18 @@ body {
   margin-bottom: -6px;
 }
 
+@font-face {
+  font-family: "Nantes";
+  src: url("../../assets/fonts/Nantes-Regular.ttf");
+}
+@font-face {
+  font-family: "Messina Sans";
+  src: url("../../assets/fonts/MessinaSans-Regular.ttf"), url("../../assets/fonts/MessinaSans-Bold.ttf"), url("../../assets/fonts/MessinaSans-Book.ttf");
+}
+@font-face {
+  font-family: "Neue Haas Unica W1G";
+  src: url("../../assets/fonts/NeueHaasUnicaW1G-Regular.otf");
+}
 *,
 *::before,
 *::after {
@@ -1170,6 +1215,18 @@ body {
   color: #191618;
 }
 
+@font-face {
+  font-family: "Nantes";
+  src: url("../../assets/fonts/Nantes-Regular.ttf");
+}
+@font-face {
+  font-family: "Messina Sans";
+  src: url("../../assets/fonts/MessinaSans-Regular.ttf"), url("../../assets/fonts/MessinaSans-Bold.ttf"), url("../../assets/fonts/MessinaSans-Book.ttf");
+}
+@font-face {
+  font-family: "Neue Haas Unica W1G";
+  src: url("../../assets/fonts/NeueHaasUnicaW1G-Regular.otf");
+}
 *,
 *::before,
 *::after {
@@ -1524,6 +1581,18 @@ body {
   gap: 12px;
 }
 
+@font-face {
+  font-family: "Nantes";
+  src: url("../../assets/fonts/Nantes-Regular.ttf");
+}
+@font-face {
+  font-family: "Messina Sans";
+  src: url("../../assets/fonts/MessinaSans-Regular.ttf"), url("../../assets/fonts/MessinaSans-Bold.ttf"), url("../../assets/fonts/MessinaSans-Book.ttf");
+}
+@font-face {
+  font-family: "Neue Haas Unica W1G";
+  src: url("../../assets/fonts/NeueHaasUnicaW1G-Regular.otf");
+}
 *,
 *::before,
 *::after {
@@ -1849,6 +1918,18 @@ body {
   border-radius: 6px;
 }
 
+@font-face {
+  font-family: "Nantes";
+  src: url("../../assets/fonts/Nantes-Regular.ttf");
+}
+@font-face {
+  font-family: "Messina Sans";
+  src: url("../../assets/fonts/MessinaSans-Regular.ttf"), url("../../assets/fonts/MessinaSans-Bold.ttf"), url("../../assets/fonts/MessinaSans-Book.ttf");
+}
+@font-face {
+  font-family: "Neue Haas Unica W1G";
+  src: url("../../assets/fonts/NeueHaasUnicaW1G-Regular.otf");
+}
 *,
 *::before,
 *::after {
@@ -2264,6 +2345,18 @@ body {
   }
 }
 
+@font-face {
+  font-family: "Nantes";
+  src: url("../../assets/fonts/Nantes-Regular.ttf");
+}
+@font-face {
+  font-family: "Messina Sans";
+  src: url("../../assets/fonts/MessinaSans-Regular.ttf"), url("../../assets/fonts/MessinaSans-Bold.ttf"), url("../../assets/fonts/MessinaSans-Book.ttf");
+}
+@font-face {
+  font-family: "Neue Haas Unica W1G";
+  src: url("../../assets/fonts/NeueHaasUnicaW1G-Regular.otf");
+}
 *,
 *::before,
 *::after {
@@ -2609,6 +2702,18 @@ body {
   margin-top: 14px;
 }
 
+@font-face {
+  font-family: "Nantes";
+  src: url("../../assets/fonts/Nantes-Regular.ttf");
+}
+@font-face {
+  font-family: "Messina Sans";
+  src: url("../../assets/fonts/MessinaSans-Regular.ttf"), url("../../assets/fonts/MessinaSans-Bold.ttf"), url("../../assets/fonts/MessinaSans-Book.ttf");
+}
+@font-face {
+  font-family: "Neue Haas Unica W1G";
+  src: url("../../assets/fonts/NeueHaasUnicaW1G-Regular.otf");
+}
 *,
 *::before,
 *::after {
@@ -2933,6 +3038,18 @@ body {
   height: 420px;
 }
 
+@font-face {
+  font-family: "Nantes";
+  src: url("../../assets/fonts/Nantes-Regular.ttf");
+}
+@font-face {
+  font-family: "Messina Sans";
+  src: url("../../assets/fonts/MessinaSans-Regular.ttf"), url("../../assets/fonts/MessinaSans-Bold.ttf"), url("../../assets/fonts/MessinaSans-Book.ttf");
+}
+@font-face {
+  font-family: "Neue Haas Unica W1G";
+  src: url("../../assets/fonts/NeueHaasUnicaW1G-Regular.otf");
+}
 *,
 *::before,
 *::after {
@@ -3286,4 +3403,20 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 6px;
+}
+
+.check-nantes {
+  font-size: 48px;
+  font-family: "Nantes", sans-serif;
+}
+
+.check-messina {
+  margin-bottom: 20px;
+  font-family: "Messina Sans", sans-serif;
+}
+
+.check-neue-haas {
+  margin: 20px 0 20px 0;
+  font-size: 24px;
+  font-family: "Neue Haas Unica W1G", sans-serif;
 }/*# sourceMappingURL=style.css.map */
