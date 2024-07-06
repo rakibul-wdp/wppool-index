@@ -2,42 +2,52 @@
 @import "./variables";
 
 .companies {
-  .companies__main {
+  margin-bottom: 151px;
+
+  .companies-main-container {
     background-color: #fff;
+    width: calc(100% - 50px);
+    margin: 0 25px 40px 25px;
     border-radius: 20px;
-    padding: 41px 30px 11px 30px;
-    margin-bottom: 40px;
+    box-shadow: 0px 66px 66px 0px #0000000a;
 
-    .companies__header {
-      @include displayProperty(row, center, space-between, 0);
-      margin-bottom: 52px;
+    .companies__main {
+      max-width: 1366px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 41px 30px 11px 30px;
 
-      div {
-        @include displayProperty(row, center, start, 9px);
-        border: 1px solid #dadada;
-        border-radius: 8px;
-        padding: 17px 0px 17px 19px;
-        background-color: $secondary-light-color;
+      .companies__header {
+        @include displayProperty(row, center, space-between, 0);
+        margin-bottom: 52px;
 
-        input {
-          border: none;
+        div {
+          @include displayProperty(row, center, start, 9px);
+          border: 1px solid #dadada;
+          border-radius: 8px;
+          padding: 17px 0px 17px 19px;
           background-color: $secondary-light-color;
+
+          input {
+            border: none;
+            background-color: $secondary-light-color;
+          }
         }
       }
-    }
 
-    .companies__table {
-      height: 25vh;
-      overflow-y: auto;
+      .companies__table {
+        height: 25vh;
+        overflow-y: auto;
 
-      table {
-        width: 100%;
+        table {
+          width: 100%;
 
-        tr {
-          th {
-            button {
-              @include displayProperty(row, center, space-between, 10px);
-              border: none;
+          tr {
+            th {
+              button {
+                @include displayProperty(row, center, space-between, 10px);
+                border: none;
+              }
             }
           }
         }
@@ -46,8 +56,6 @@
   }
 
   .companies__buttons {
-    background-color: $secondary-color;
     @include displayProperty(row, center, center, 12px);
-    margin-bottom: 151px;
   }
 }

@@ -10,341 +10,348 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./scss/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
   </head>
-  <body class="container">
+  <body>
     <!-- header or hero -->
     <header class="header">
-      <nav>
-        <img
-          src="./assets/icons/wppool-logo.svg"
-          alt="wppool-logo"
-          class="wppool-logo"
-        />
-        <div>
-          <img src="./assets/icons/share.svg" alt="share icon" />
-          <button>Download the 2024 Report</button>
-          <button>
-            <img src="./assets/icons/menu.svg" alt="" />
-          </button>
-        </div>
-      </nav>
+      <div class="header-container">
+        <nav>
+          <img
+            src="./assets/icons/wppool-logo.svg"
+            alt="wppool-logo"
+            class="wppool-logo"
+          />
+          <div>
+            <img src="./assets/icons/share.svg" alt="share icon" />
+            <button>Download the 2024 Report</button>
+            <button>
+              <img src="./assets/icons/menu.svg" alt="" />
+            </button>
+          </div>
+        </nav>
 
-      <main>
-        <aside>
-          <div>
-            <h3 class="title-5">60</h3>
-            <p class="paragraph-9">Companies</p>
+        <main>
+          <aside>
+            <div>
+              <h3 class="title-5">60</h3>
+              <p class="paragraph-9">Companies</p>
+            </div>
+            <div>
+              <h3 class="title-5">$100B</h3>
+              <p class="paragraph-9">Market cap</p>
+            </div>
+            <div>
+              <h3 class="title-5">3.5x</h3>
+              <p class="paragraph-9">Revenue multiple</p>
+            </div>
+            <div>
+              <h3 class="title-5">60%</h3>
+              <p class="paragraph-9">LTM avg. revenue growth rate</p>
+            </div>
+          </aside>
+          <div class="main__content">
+            <h1 class="title-1">The WPPOOL Index</h1>
+            <p class="paragraph-1">
+              Monitor the performance of emerging, publicly traded, financial
+              technology companies
+            </p>
           </div>
-          <div>
-            <h3 class="title-5">$100B</h3>
-            <p class="paragraph-9">Market cap</p>
-          </div>
-          <div>
-            <h3 class="title-5">3.5x</h3>
-            <p class="paragraph-9">Revenue multiple</p>
-          </div>
-          <div>
-            <h3 class="title-5">60%</h3>
-            <p class="paragraph-9">LTM avg. revenue growth rate</p>
-          </div>
-        </aside>
-        <div class="main__content">
-          <h1 class="title-1">The WPPOOL Index</h1>
-          <p class="paragraph-1">
-            Monitor the performance of emerging, publicly traded, financial
-            technology companies
-          </p>
-        </div>
-      </main>
+        </main>
+      </div>
     </header>
 
     <!-- chart -->
     <section class="chart">
-      <aside>
-        <button>
-          <p class="paragraph-12">The Index</p>
-          <span>-</span>
-        </button>
-        <button>
-          <p class="paragraph-12">The Index Tab Two</p>
-          <span class="paragraph-15">+</span>
-        </button>
-        <button>
-          <p class="paragraph-12">The Index Tab Three</p>
-          <span class="paragraph-15">+</span>
-        </button>
-        <button>
-          <p class="paragraph-12">The Index Tab Four</p>
-          <span class="paragraph-15">+</span>
-        </button>
-        <button>
-          <p class="paragraph-12">The Index Five</p>
-          <span class="paragraph-15">+</span>
-        </button>
-      </aside>
-      <main class="chart__main">
-        <div class="chart__main_title">
-          <img src="./assets/icons/chart-title.svg" alt="rectangle" />
-          <h3 class="title-5">The WPPOOL Index</h3>
-        </div>
-        <div class="chart__main_index">
-          <div>
-            <h4 class="title-8">+66.2%</h4>
+      <div class="chart-container">
+        <aside>
+          <button>
+            <p class="paragraph-12">The Index</p>
+            <span>-</span>
+          </button>
+          <button>
+            <p class="paragraph-12">The Index Tab Two</p>
+            <span class="paragraph-15">+</span>
+          </button>
+          <button>
+            <p class="paragraph-12">The Index Tab Three</p>
+            <span class="paragraph-15">+</span>
+          </button>
+          <button>
+            <p class="paragraph-12">The Index Tab Four</p>
+            <span class="paragraph-15">+</span>
+          </button>
+          <button>
+            <p class="paragraph-12">The Index Five</p>
+            <span class="paragraph-15">+</span>
+          </button>
+        </aside>
+        <main class="chart__main">
+          <div class="chart__main_title">
+            <img src="./assets/icons/chart-title.svg" alt="rectangle" />
+            <h3 class="title-5">The WPPOOL Index</h3>
+          </div>
+          <div class="chart__main_index">
             <div>
-              <p class="paragraph-26">WPPOOL Index</p>
-              <span></span>
+              <h4 class="title-8">+66.2%</h4>
+              <div>
+                <p class="paragraph-26">WPPOOL Index</p>
+                <span></span>
+              </div>
+            </div>
+            <div>
+              <h4 class="title-8">+26.6%</h4>
+              <div>
+                <p class="paragraph-26">Google Index</p>
+                <span></span>
+              </div>
+            </div>
+            <div>
+              <h4 class="title-8">+34.1%</h4>
+              <div>
+                <p class="paragraph-26">Microsoft</p>
+                <span></span>
+              </div>
+            </div>
+            <div>
+              <h4 class="title-8">+17%</h4>
+              <div>
+                <p class="paragraph-26">Twitter Index</p>
+                <span></span>
+              </div>
             </div>
           </div>
-          <div>
-            <h4 class="title-8">+26.6%</h4>
-            <div>
-              <p class="paragraph-26">Google Index</p>
-              <span></span>
+          <div class="chart__main_handle">
+            <div class="chart__main_handle-large">
+              <button>
+                <p class="paragraph-26">Selectors</p>
+                <img
+                  src="./assets/icons/arrow_drop_down.svg"
+                  alt="arrow drop down"
+                />
+              </button>
+              <button>
+                <p class="paragraph-26">Types of IPO</p>
+                <img
+                  src="./assets/icons/arrow_drop_down.svg"
+                  alt="arrow drop down"
+                />
+              </button>
+            </div>
+            <div class="chart__main_handle-small">
+              <button>1Y</button><button>YTD</button><button>6M</button
+              ><button>1M</button><button>1W</button>
             </div>
           </div>
-          <div>
-            <h4 class="title-8">+34.1%</h4>
+          <div class="chart__main_visual">
+            <canvas id="myChart" style="width: 100%"></canvas>
             <div>
-              <p class="paragraph-26">Microsoft</p>
-              <span></span>
+              <div>
+                <span></span>
+                <p class="paragraph-25">WPPOOL</p>
+              </div>
+              <div>
+                <span></span>
+                <p class="paragraph-25">Google</p>
+              </div>
+              <div>
+                <span></span>
+                <p class="paragraph-25">Microsoft</p>
+              </div>
+              <div>
+                <span></span>
+                <p class="paragraph-25">Twitter</p>
+              </div>
             </div>
           </div>
-          <div>
-            <h4 class="title-8">+17%</h4>
-            <div>
-              <p class="paragraph-26">Twitter Index</p>
-              <span></span>
-            </div>
-          </div>
-        </div>
-        <div class="chart__main_handle">
-          <div class="chart__main_handle-large">
-            <button>
-              <p class="paragraph-26">Selectors</p>
-              <img
-                src="./assets/icons/arrow_drop_down.svg"
-                alt="arrow drop down"
-              />
-            </button>
-            <button>
-              <p class="paragraph-26">Types of IPO</p>
-              <img
-                src="./assets/icons/arrow_drop_down.svg"
-                alt="arrow drop down"
-              />
-            </button>
-          </div>
-          <div class="chart__main_handle-small">
-            <button>1Y</button><button>YTD</button><button>6M</button
-            ><button>1M</button><button>1W</button>
-          </div>
-        </div>
-        <div class="chart__main_visual">
-          <canvas id="myChart" style="width: 100%"></canvas>
-          <div>
-            <div>
-              <span></span>
-              <p class="paragraph-25">WPPOOL</p>
-            </div>
-            <div>
-              <span></span>
-              <p class="paragraph-25">Google</p>
-            </div>
-            <div>
-              <span></span>
-              <p class="paragraph-25">Microsoft</p>
-            </div>
-            <div>
-              <span></span>
-              <p class="paragraph-25">Twitter</p>
-            </div>
-          </div>
-        </div>
-      </main>
+        </main>
+      </div>
     </section>
 
     <!-- companies -->
     <section class="companies">
-      <div class="companies__main">
-        <div class="companies__header">
-          <h2 class="title-3">All Companies</h2>
-          <div>
-            <img src="./assets/icons/search-icon.svg" alt="search icon" />
-            <input
-              type="text"
-              name=""
-              id=""
-              placeholder="Search Companies"
-              class="subtitle"
-            />
+      <div class="companies-main-container">
+        <div class="companies__main">
+          <div class="companies__header">
+            <h2 class="title-3">All Companies</h2>
+            <div>
+              <img src="./assets/icons/search-icon.svg" alt="search icon" />
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Search Companies"
+                class="subtitle"
+              />
+            </div>
           </div>
+          <main class="companies__table">
+            <table>
+              <tr>
+                <th class="paragraph-14">Company</th>
+                <th>
+                  <button>
+                    <p class="paragraph-23">Ticker</p>
+                    <img
+                      src="./assets/icons/arrow_drop_down-dark.svg"
+                      alt="dropdown icon"
+                    />
+                  </button>
+                </th>
+                <th class="paragraph-23">Vertical</th>
+                <th class="paragraph-23">Price</th>
+                <th class="paragraph-23">Market Cap ($B)</th>
+                <th class="paragraph-23">Revenue Growth</th>
+                <th class="paragraph-23">Gross Margin</th>
+                <th class="paragraph-23">EV/Revenue</th>
+                <th class="paragraph-23">YTD Performance</th>
+              </tr>
+              <tr>
+                <td class="paragraph-15">Adyen</td>
+                <td class="paragraph-15">AFRM</td>
+                <td class="paragraph-15">Payments</td>
+                <td class="paragraph-15">$17.15</td>
+                <td class="paragraph-15">$50.5</td>
+                <td class="paragraph-15">49.0%</td>
+                <td class="paragraph-15">15.8%</td>
+                <td class="paragraph-15">6.3</td>
+                <td class="paragraph-15">24.3%</td>
+              </tr>
+              <tr>
+                <td class="paragraph-15">Affirm</td>
+                <td class="paragraph-15">AFRM</td>
+                <td class="paragraph-15">Lending</td>
+                <td class="paragraph-15">$16.12</td>
+                <td class="paragraph-15">$4.7</td>
+                <td class="paragraph-15">32.0%</td>
+                <td class="paragraph-15">48.7%</td>
+                <td class="paragraph-15">4.9</td>
+                <td class="paragraph-15">77.1%</td>
+              </tr>
+              <tr>
+                <td class="paragraph-15">Alkami Technology</td>
+                <td class="paragraph-15">ALKT</td>
+                <td class="paragraph-15">B2B SaaS</td>
+                <td class="paragraph-15">$16.27</td>
+                <td class="paragraph-15">$1.5</td>
+                <td class="paragraph-15">34.0%</td>
+                <td class="paragraph-15">53.0%</td>
+                <td class="paragraph-15">7.0</td>
+                <td class="paragraph-15">10.0%</td>
+              </tr>
+              <tr>
+                <td class="paragraph-15">AvidXchange</td>
+                <td class="paragraph-15">AVDX</td>
+                <td class="paragraph-15">Payments</td>
+                <td class="paragraph-15">$10.21</td>
+                <td class="paragraph-15">$2.0</td>
+                <td class="paragraph-15">27.0%</td>
+                <td class="paragraph-15">61.5%</td>
+                <td class="paragraph-15">6.0</td>
+                <td class="paragraph-15">10.5%</td>
+              </tr>
+              <tr>
+                <td class="paragraph-15">Bakkt Holdings</td>
+                <td class="paragraph-15">BKKT</td>
+                <td class="paragraph-15">Wealth</td>
+                <td class="paragraph-15">$1.32</td>
+                <td class="paragraph-15">$0.1</td>
+                <td class="paragraph-15">38%</td>
+                <td class="paragraph-15">--</td>
+                <td class="paragraph-15">0.4</td>
+                <td class="paragraph-15">13.8%</td>
+              </tr>
+              <tr>
+                <td class="paragraph-15">Virtu Financial</td>
+                <td class="paragraph-15">VIRT</td>
+                <td class="paragraph-15">Wealth</td>
+                <td class="paragraph-15">$17.0</td>
+                <td class="paragraph-15">$3.1</td>
+                <td class="paragraph-15">-22.0%</td>
+                <td class="paragraph-15">38.2%</td>
+                <td class="paragraph-15">2.6</td>
+                <td class="paragraph-15">-17.8%</td>
+              </tr>
+              <tr>
+                <td class="paragraph-15">Adyen</td>
+                <td class="paragraph-15">AFRM</td>
+                <td class="paragraph-15">Payments</td>
+                <td class="paragraph-15">$17.15</td>
+                <td class="paragraph-15">$50.5</td>
+                <td class="paragraph-15">49.0%</td>
+                <td class="paragraph-15">15.8%</td>
+                <td class="paragraph-15">6.3</td>
+                <td class="paragraph-15">24.3%</td>
+              </tr>
+              <tr>
+                <td class="paragraph-15">Affirm</td>
+                <td class="paragraph-15">AFRM</td>
+                <td class="paragraph-15">Lending</td>
+                <td class="paragraph-15">$16.12</td>
+                <td class="paragraph-15">$4.7</td>
+                <td class="paragraph-15">32.0%</td>
+                <td class="paragraph-15">48.7%</td>
+                <td class="paragraph-15">4.9</td>
+                <td class="paragraph-15">77.1%</td>
+              </tr>
+              <tr>
+                <td class="paragraph-15">Alkami Technology</td>
+                <td class="paragraph-15">ALKT</td>
+                <td class="paragraph-15">B2B SaaS</td>
+                <td class="paragraph-15">$16.27</td>
+                <td class="paragraph-15">$1.5</td>
+                <td class="paragraph-15">34.0%</td>
+                <td class="paragraph-15">53.0%</td>
+                <td class="paragraph-15">7.0</td>
+                <td class="paragraph-15">10.0%</td>
+              </tr>
+              <tr>
+                <td class="paragraph-15">AvidXchange</td>
+                <td class="paragraph-15">AVDX</td>
+                <td class="paragraph-15">Payments</td>
+                <td class="paragraph-15">$10.21</td>
+                <td class="paragraph-15">$2.0</td>
+                <td class="paragraph-15">27.0%</td>
+                <td class="paragraph-15">61.5%</td>
+                <td class="paragraph-15">6.0</td>
+                <td class="paragraph-15">10.5%</td>
+              </tr>
+              <tr>
+                <td class="paragraph-15">Bakkt Holdings</td>
+                <td class="paragraph-15">BKKT</td>
+                <td class="paragraph-15">Wealth</td>
+                <td class="paragraph-15">$1.32</td>
+                <td class="paragraph-15">$0.1</td>
+                <td class="paragraph-15">38%</td>
+                <td class="paragraph-15">--</td>
+                <td class="paragraph-15">0.4</td>
+                <td class="paragraph-15">13.8%</td>
+              </tr>
+              <tr>
+                <td class="paragraph-15">Virtu Financial</td>
+                <td class="paragraph-15">VIRT</td>
+                <td class="paragraph-15">Wealth</td>
+                <td class="paragraph-15">$17.0</td>
+                <td class="paragraph-15">$3.1</td>
+                <td class="paragraph-15">-22.0%</td>
+                <td class="paragraph-15">38.2%</td>
+                <td class="paragraph-15">2.6</td>
+                <td class="paragraph-15">-17.8%</td>
+              </tr>
+              <tr>
+                <td class="paragraph-15">Adyen</td>
+                <td class="paragraph-15">AFRM</td>
+                <td class="paragraph-15">Payments</td>
+                <td class="paragraph-15">$17.15</td>
+                <td class="paragraph-15">$50.5</td>
+                <td class="paragraph-15">49.0%</td>
+                <td class="paragraph-15">15.8%</td>
+                <td class="paragraph-15">6.3</td>
+                <td class="paragraph-15">24.3%</td>
+              </tr>
+            </table>
+          </main>
         </div>
-        <main class="companies__table">
-          <table>
-            <tr>
-              <th class="paragraph-14">Company</th>
-              <th>
-                <button>
-                  <p class="paragraph-23">Ticker</p>
-                  <img
-                    src="./assets/icons/arrow_drop_down-dark.svg"
-                    alt="dropdown icon"
-                  />
-                </button>
-              </th>
-              <th class="paragraph-23">Vertical</th>
-              <th class="paragraph-23">Price</th>
-              <th class="paragraph-23">Market Cap ($B)</th>
-              <th class="paragraph-23">Revenue Growth</th>
-              <th class="paragraph-23">Gross Margin</th>
-              <th class="paragraph-23">EV/Revenue</th>
-              <th class="paragraph-23">YTD Performance</th>
-            </tr>
-            <tr>
-              <td class="paragraph-15">Adyen</td>
-              <td class="paragraph-15">AFRM</td>
-              <td class="paragraph-15">Payments</td>
-              <td class="paragraph-15">$17.15</td>
-              <td class="paragraph-15">$50.5</td>
-              <td class="paragraph-15">49.0%</td>
-              <td class="paragraph-15">15.8%</td>
-              <td class="paragraph-15">6.3</td>
-              <td class="paragraph-15">24.3%</td>
-            </tr>
-            <tr>
-              <td class="paragraph-15">Affirm</td>
-              <td class="paragraph-15">AFRM</td>
-              <td class="paragraph-15">Lending</td>
-              <td class="paragraph-15">$16.12</td>
-              <td class="paragraph-15">$4.7</td>
-              <td class="paragraph-15">32.0%</td>
-              <td class="paragraph-15">48.7%</td>
-              <td class="paragraph-15">4.9</td>
-              <td class="paragraph-15">77.1%</td>
-            </tr>
-            <tr>
-              <td class="paragraph-15">Alkami Technology</td>
-              <td class="paragraph-15">ALKT</td>
-              <td class="paragraph-15">B2B SaaS</td>
-              <td class="paragraph-15">$16.27</td>
-              <td class="paragraph-15">$1.5</td>
-              <td class="paragraph-15">34.0%</td>
-              <td class="paragraph-15">53.0%</td>
-              <td class="paragraph-15">7.0</td>
-              <td class="paragraph-15">10.0%</td>
-            </tr>
-            <tr>
-              <td class="paragraph-15">AvidXchange</td>
-              <td class="paragraph-15">AVDX</td>
-              <td class="paragraph-15">Payments</td>
-              <td class="paragraph-15">$10.21</td>
-              <td class="paragraph-15">$2.0</td>
-              <td class="paragraph-15">27.0%</td>
-              <td class="paragraph-15">61.5%</td>
-              <td class="paragraph-15">6.0</td>
-              <td class="paragraph-15">10.5%</td>
-            </tr>
-            <tr>
-              <td class="paragraph-15">Bakkt Holdings</td>
-              <td class="paragraph-15">BKKT</td>
-              <td class="paragraph-15">Wealth</td>
-              <td class="paragraph-15">$1.32</td>
-              <td class="paragraph-15">$0.1</td>
-              <td class="paragraph-15">38%</td>
-              <td class="paragraph-15">--</td>
-              <td class="paragraph-15">0.4</td>
-              <td class="paragraph-15">13.8%</td>
-            </tr>
-            <tr>
-              <td class="paragraph-15">Virtu Financial</td>
-              <td class="paragraph-15">VIRT</td>
-              <td class="paragraph-15">Wealth</td>
-              <td class="paragraph-15">$17.0</td>
-              <td class="paragraph-15">$3.1</td>
-              <td class="paragraph-15">-22.0%</td>
-              <td class="paragraph-15">38.2%</td>
-              <td class="paragraph-15">2.6</td>
-              <td class="paragraph-15">-17.8%</td>
-            </tr>
-            <tr>
-              <td class="paragraph-15">Adyen</td>
-              <td class="paragraph-15">AFRM</td>
-              <td class="paragraph-15">Payments</td>
-              <td class="paragraph-15">$17.15</td>
-              <td class="paragraph-15">$50.5</td>
-              <td class="paragraph-15">49.0%</td>
-              <td class="paragraph-15">15.8%</td>
-              <td class="paragraph-15">6.3</td>
-              <td class="paragraph-15">24.3%</td>
-            </tr>
-            <tr>
-              <td class="paragraph-15">Affirm</td>
-              <td class="paragraph-15">AFRM</td>
-              <td class="paragraph-15">Lending</td>
-              <td class="paragraph-15">$16.12</td>
-              <td class="paragraph-15">$4.7</td>
-              <td class="paragraph-15">32.0%</td>
-              <td class="paragraph-15">48.7%</td>
-              <td class="paragraph-15">4.9</td>
-              <td class="paragraph-15">77.1%</td>
-            </tr>
-            <tr>
-              <td class="paragraph-15">Alkami Technology</td>
-              <td class="paragraph-15">ALKT</td>
-              <td class="paragraph-15">B2B SaaS</td>
-              <td class="paragraph-15">$16.27</td>
-              <td class="paragraph-15">$1.5</td>
-              <td class="paragraph-15">34.0%</td>
-              <td class="paragraph-15">53.0%</td>
-              <td class="paragraph-15">7.0</td>
-              <td class="paragraph-15">10.0%</td>
-            </tr>
-            <tr>
-              <td class="paragraph-15">AvidXchange</td>
-              <td class="paragraph-15">AVDX</td>
-              <td class="paragraph-15">Payments</td>
-              <td class="paragraph-15">$10.21</td>
-              <td class="paragraph-15">$2.0</td>
-              <td class="paragraph-15">27.0%</td>
-              <td class="paragraph-15">61.5%</td>
-              <td class="paragraph-15">6.0</td>
-              <td class="paragraph-15">10.5%</td>
-            </tr>
-            <tr>
-              <td class="paragraph-15">Bakkt Holdings</td>
-              <td class="paragraph-15">BKKT</td>
-              <td class="paragraph-15">Wealth</td>
-              <td class="paragraph-15">$1.32</td>
-              <td class="paragraph-15">$0.1</td>
-              <td class="paragraph-15">38%</td>
-              <td class="paragraph-15">--</td>
-              <td class="paragraph-15">0.4</td>
-              <td class="paragraph-15">13.8%</td>
-            </tr>
-            <tr>
-              <td class="paragraph-15">Virtu Financial</td>
-              <td class="paragraph-15">VIRT</td>
-              <td class="paragraph-15">Wealth</td>
-              <td class="paragraph-15">$17.0</td>
-              <td class="paragraph-15">$3.1</td>
-              <td class="paragraph-15">-22.0%</td>
-              <td class="paragraph-15">38.2%</td>
-              <td class="paragraph-15">2.6</td>
-              <td class="paragraph-15">-17.8%</td>
-            </tr>
-            <tr>
-              <td class="paragraph-15">Adyen</td>
-              <td class="paragraph-15">AFRM</td>
-              <td class="paragraph-15">Payments</td>
-              <td class="paragraph-15">$17.15</td>
-              <td class="paragraph-15">$50.5</td>
-              <td class="paragraph-15">49.0%</td>
-              <td class="paragraph-15">15.8%</td>
-              <td class="paragraph-15">6.3</td>
-              <td class="paragraph-15">24.3%</td>
-            </tr>
-          </table>
-        </main>
       </div>
       <div class="companies__buttons">
         <button>
@@ -355,322 +362,340 @@
 
     <!-- future -->
     <section class="future">
-      <div>
-        <h2 class="title-3">Potential Future Listings</h2>
-        <p class="paragraph-8">
-          Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          vulputate libero et velit interdum, ac aliquet odio mattis. Class
-          aptent taciti sociosqu ad litora torquent per conubia nostra, per
-          inceptos himenaeos.
-        </p>
+      <div class="future-container">
+        <div>
+          <h2 class="title-3">Potential Future Listings</h2>
+          <p class="paragraph-8">
+            Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate libero et velit interdum, ac aliquet odio mattis. Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos.
+          </p>
+        </div>
+        <main>
+          <div><img src="./assets/icons/stripe.svg" alt="stripe" /></div>
+          <div><img src="./assets/icons/klarna.svg" alt="klarna" /></div>
+          <div><img src="./assets/icons/plaid.svg" alt="plaid" /></div>
+          <div><img src="./assets/icons/checkout.svg" alt="checkout" /></div>
+          <div><img src="./assets/icons/revolut.svg" alt="revolut" /></div>
+          <div><img src="./assets/icons/chime.svg" alt="chime" /></div>
+          <div><img src="./assets/icons/n26.svg" alt="n26" /></div>
+          <div><img src="./assets/icons/brex.svg" alt="brex" /></div>
+          <div><img src="./assets/icons/deel.svg" alt="deel" /></div>
+          <div><img src="./assets/icons/gusto.svg" alt="gusto" /></div>
+        </main>
       </div>
-      <main>
-        <div><img src="./assets/icons/stripe.svg" alt="stripe" /></div>
-        <div><img src="./assets/icons/klarna.svg" alt="klarna" /></div>
-        <div><img src="./assets/icons/plaid.svg" alt="plaid" /></div>
-        <div><img src="./assets/icons/checkout.svg" alt="checkout" /></div>
-        <div><img src="./assets/icons/revolut.svg" alt="revolut" /></div>
-        <div><img src="./assets/icons/chime.svg" alt="chime" /></div>
-        <div><img src="./assets/icons/n26.svg" alt="n26" /></div>
-        <div><img src="./assets/icons/brex.svg" alt="brex" /></div>
-        <div><img src="./assets/icons/deel.svg" alt="deel" /></div>
-        <div><img src="./assets/icons/gusto.svg" alt="gusto" /></div>
-      </main>
     </section>
 
     <!-- carousel -->
-    <section class="carousel-container">
-      <div>
-        <h2 class="title-2">State of USA</h2>
-        <button>
-          <h2 class="title-4">2024</h2>
-          <img src="./assets/icons/arrow_drop_down-carousel.svg" alt="arrow" />
-        </button>
-        <p class="paragraph-8">
-          Click through the slides or download the report to view natively on
-          your device.
-        </p>
-      </div>
-      <main class="wrapper">
-        <img
-          class="carousel-arrow left-arrow"
-          id="left"
-          src="./assets/icons/arrow_downward_alt.svg"
-          alt="arrow"
-        />
-        <ul class="carousel">
-          <li class="card">
-            <div class="img">
-              <img
-                src="./assets/images/carousel-1.png"
-                alt="img"
-                draggable="false"
-              />
-            </div>
-          </li>
-          <li class="card">
-            <div class="img">
-              <img
-                src="./assets/images/carousel-2.png"
-                alt="img"
-                draggable="false"
-              />
-            </div>
-          </li>
-          <li class="card">
-            <div class="img">
-              <img
-                src="./assets/images/carousel-3.png"
-                alt="img"
-                draggable="false"
-              />
-            </div>
-          </li>
-        </ul>
-        <img
-          class="carousel-arrow right-arrow"
-          id="right"
-          src="./assets/icons/arrow_downward_alt.svg"
-          alt="arrow"
-        />
-        <div class="carousel-control">
-          <div>
-            <p class="paragraph-16">Pages</p>
-            <button>
-              <p class="paragraph-16">1 and 2</p>
-              <img src="" alt="" />
-            </button>
-            <p class="paragraph-16">of 37</p>
-          </div>
-          <button><p>Download the 2023 Report</p></button>
+    <section class="carousel-section">
+      <div class="carousel-container">
+        <div>
+          <h2 class="title-2">State of USA</h2>
+          <button>
+            <h2 class="title-4">2024</h2>
+            <img
+              src="./assets/icons/arrow_drop_down-carousel.svg"
+              alt="arrow"
+            />
+          </button>
+          <p class="paragraph-8">
+            Click through the slides or download the report to view natively on
+            your device.
+          </p>
         </div>
-      </main>
+        <main class="wrapper">
+          <img
+            class="carousel-arrow left-arrow"
+            id="left"
+            src="./assets/icons/arrow_downward_alt.svg"
+            alt="arrow"
+          />
+          <ul class="carousel">
+            <li class="card">
+              <div class="img">
+                <img
+                  src="./assets/images/carousel-1.png"
+                  alt="img"
+                  draggable="false"
+                />
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <img
+                  src="./assets/images/carousel-2.png"
+                  alt="img"
+                  draggable="false"
+                />
+              </div>
+            </li>
+            <li class="card">
+              <div class="img">
+                <img
+                  src="./assets/images/carousel-3.png"
+                  alt="img"
+                  draggable="false"
+                />
+              </div>
+            </li>
+          </ul>
+          <img
+            class="carousel-arrow right-arrow"
+            id="right"
+            src="./assets/icons/arrow_downward_alt.svg"
+            alt="arrow"
+          />
+          <div class="carousel-control">
+            <div>
+              <p class="paragraph-16">Pages</p>
+              <button>
+                <p class="paragraph-16">1 and 2</p>
+                <img src="" alt="" />
+              </button>
+              <p class="paragraph-16">of 37</p>
+            </div>
+            <button><p>Download the 2023 Report</p></button>
+          </div>
+        </main>
+      </div>
     </section>
 
     <!-- stories -->
     <section class="stories">
-      <div class="stories-heading">
-        <h2 class="title-3">Stories & Ideas</h2>
-        <p class="paragraph-6">The latest news and updates</p>
+      <div class="stories-container">
+        <div class="stories-heading">
+          <h2 class="title-3">Stories & Ideas</h2>
+          <p class="paragraph-6">The latest news and updates</p>
+        </div>
+        <main>
+          <div>
+            <img src="./assets/images/shagor.png" alt="shagor" />
+            <p class="paragraph-20">By: Sahabuddin Sagor</p>
+            <p class="paragraph-13 stories-details">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia.
+            </p>
+            <button>Read More</button>
+          </div>
+          <div>
+            <img src="./assets/images/khan.png" alt="khan" />
+            <p class="paragraph-20">By: Nayem Khan</p>
+            <p class="paragraph-13 stories-details">
+              Lorem ipsum dolor sit amet consectetur
+            </p>
+            <button>Read More</button>
+          </div>
+          <div>
+            <img src="./assets/images/shagor.png" alt="shagor" />
+            <div>
+              <img
+                class="avatar-corner-icon"
+                src="./assets/icons/carrot-in-avatar.svg"
+                alt="icon"
+              />
+            </div>
+            <p class="paragraph-20">By: Shagor Sahabuddin</p>
+            <p class="paragraph-13 stories-details">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia.
+            </p>
+            <button>Read More</button>
+          </div>
+          <div>
+            <img src="./assets/images/shagor.png" alt="shagor" />
+            <p class="paragraph-20">By: Sahabuddin Sagor</p>
+            <p class="paragraph-13 stories-details">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia.
+            </p>
+            <button>Read More</button>
+          </div>
+          <div>
+            <img src="./assets/images/khan.png" alt="khan" />
+            <p class="paragraph-20">By: Nayem Khan</p>
+            <p class="paragraph-13 stories-details">
+              Key Takeaways from Robotics Invest 2023
+            </p>
+            <button>Read More</button>
+          </div>
+          <div>
+            <img src="./assets/images/shagor.png" alt="shagor" />
+            <div>
+              <img
+                class="avatar-corner-icon"
+                src="./assets/icons/carrot-in-avatar.svg"
+                alt="icon"
+              />
+            </div>
+            <p class="paragraph-20">By: Shagor Sahabuddin</p>
+            <p class="paragraph-13 stories-details">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia.
+            </p>
+            <button>Read More</button>
+          </div>
+        </main>
       </div>
-      <main>
-        <div>
-          <img src="./assets/images/shagor.png" alt="shagor" />
-          <p class="paragraph-20">By: Sahabuddin Sagor</p>
-          <p class="paragraph-13 stories-details">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia.
-          </p>
-          <button>Read More</button>
-        </div>
-        <div>
-          <img src="./assets/images/khan.png" alt="khan" />
-          <p class="paragraph-20">By: Nayem Khan</p>
-          <p class="paragraph-13 stories-details">
-            Lorem ipsum dolor sit amet consectetur
-          </p>
-          <button>Read More</button>
-        </div>
-        <div>
-          <img src="./assets/images/shagor.png" alt="shagor" />
-          <div>
-            <img
-              class="avatar-corner-icon"
-              src="./assets/icons/carrot-in-avatar.svg"
-              alt="icon"
-            />
-          </div>
-          <p class="paragraph-20">By: Shagor Sahabuddin</p>
-          <p class="paragraph-13 stories-details">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia.
-          </p>
-          <button>Read More</button>
-        </div>
-        <div>
-          <img src="./assets/images/shagor.png" alt="shagor" />
-          <p class="paragraph-20">By: Sahabuddin Sagor</p>
-          <p class="paragraph-13 stories-details">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia.
-          </p>
-          <button>Read More</button>
-        </div>
-        <div>
-          <img src="./assets/images/khan.png" alt="khan" />
-          <p class="paragraph-20">By: Nayem Khan</p>
-          <p class="paragraph-13 stories-details">
-            Key Takeaways from Robotics Invest 2023
-          </p>
-          <button>Read More</button>
-        </div>
-        <div>
-          <img src="./assets/images/shagor.png" alt="shagor" />
-          <div>
-            <img
-              class="avatar-corner-icon"
-              src="./assets/icons/carrot-in-avatar.svg"
-              alt="icon"
-            />
-          </div>
-          <p class="paragraph-20">By: Shagor Sahabuddin</p>
-          <p class="paragraph-13 stories-details">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia.
-          </p>
-          <button>Read More</button>
-        </div>
-      </main>
     </section>
 
     <!-- divider-1 -->
-    <div class="divider-1"></div>
+    <div class="divider-container-1">
+      <div class="divider-1"></div>
+    </div>
 
     <!-- about -->
     <section class="about">
-      <div>
-        <h2 class="title-2">About WPPOOL</h2>
-        <h4 class="title-7">Investing in wppool for over 50 years</h4>
-        <p class="paragraph-10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          mollitia, molestiae quas vel sint commodi
-          <span>repudiandae</span> consequuntur voluptatum laborum numquam
-          blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-          optio,eaque rerum! Provident similique accusantium nemo autem.
-        </p>
-        <button><p class="paragraph-11">Contact WPPOOL</p></button>
+      <div class="about-container">
+        <div>
+          <h2 class="title-2">About WPPOOL</h2>
+          <h4 class="title-7">Investing in wppool for over 50 years</h4>
+          <p class="paragraph-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            mollitia, molestiae quas vel sint commodi
+            <span>repudiandae</span> consequuntur voluptatum laborum numquam
+            blanditiis harum quisquam eius sed odit fugiat iusto fuga
+            praesentium optio,eaque rerum! Provident similique accusantium nemo
+            autem.
+          </p>
+          <button><p class="paragraph-11">Contact WPPOOL</p></button>
+        </div>
+        <img src="./assets/images/about.svg" alt="about" />
       </div>
-      <img src="./assets/images/about.svg" alt="about" />
     </section>
 
     <!-- divider-2 -->
-    <div class="divider-2"></div>
+    <div class="divider-container-2">
+      <div class="divider-2"></div>
+    </div>
 
     <!-- portfolio companies -->
     <section class="portfolio-companies">
-      <h2 class="title-2">Selected WPPOOL Portfolio Companies</h2>
-      <main>
-        <div>
-          <img
-            src="./assets/images/portfolio-companies/alibaba.png"
-            alt="alibaba"
-          />
-        </div>
-        <div>
-          <img
-            src="./assets/images/portfolio-companies/vendr.png"
-            alt="vendr"
-          />
-        </div>
-        <div>
-          <img
-            src="./assets/images/portfolio-companies/vestwell.png"
-            alt="vestwell"
-          />
-        </div>
-        <div>
-          <img
-            src="./assets/images/portfolio-companies/snapdocs-dark.png"
-            alt="snapdocs"
-          />
-        </div>
-        <div>
-          <img
-            src="./assets/images/portfolio-companies/vendr-small.png"
-            alt="vendr"
-          />
-        </div>
-        <div>
-          <img
-            src="./assets/images/portfolio-companies/spapdocs-light.svg"
-            alt="spapdocs"
-          />
-        </div>
-        <div>
-          <img
-            src="./assets/images/portfolio-companies/toast.png"
-            alt="toast"
-          />
-        </div>
-        <div>
-          <img
-            src="./assets/images/portfolio-companies/connexpay.png"
-            alt="connexpay"
-          />
-        </div>
-        <div>
-          <img
-            src="./assets/images/portfolio-companies/connexpay.png"
-            alt="connexpay"
-          />
-        </div>
-        <div>
-          <img
-            src="./assets/images/portfolio-companies/mineraltree.png"
-            alt="mineraltree"
-          />
-        </div>
-        <div>
-          <img
-            src="./assets/images/portfolio-companies/flywire.png"
-            alt="flywire"
-          />
-        </div>
-        <div>
-          <img
-            src="./assets/images/portfolio-companies/quovo.png"
-            alt="quovo"
-          />
-        </div>
-        <div>
-          <img
-            src="./assets/images/portfolio-companies/spendesk.svg"
-            alt="spendesk"
-          />
-        </div>
-        <div>
-          <img
-            src="./assets/images/portfolio-companies/nota_bene.svg"
-            alt="nota bene"
-          />
-        </div>
-        <div>
-          <img
-            src="./assets/images/portfolio-companies/recurly.svg"
-            alt="recurly"
-          />
-        </div>
-        <div>
-          <img
-            src="./assets/images/portfolio-companies/fireblocks.svg"
-            alt="fireblocks"
-          />
-        </div>
-        <div>
-          <img
-            src="./assets/images/portfolio-companies/kensho.png"
-            alt="kensho"
-          />
-        </div>
-        <div>
-          <img
-            src="./assets/images/portfolio-companies/future-advisor.png"
-            alt="future advisor"
-          />
-        </div>
-        <div>
-          <img
-            src="./assets/images/portfolio-companies/argyle.png"
-            alt="argyle"
-          />
-        </div>
-        <div>
-          <img
-            src="./assets/images/portfolio-companies/snapsheet.png"
-            alt="spansheet"
-          />
-        </div>
-      </main>
+      <div class="portfolio-companies-container">
+        <h2 class="title-2">Selected WPPOOL Portfolio Companies</h2>
+        <main>
+          <div>
+            <img
+              src="./assets/images/portfolio-companies/alibaba.png"
+              alt="alibaba"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/images/portfolio-companies/vendr.png"
+              alt="vendr"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/images/portfolio-companies/vestwell.png"
+              alt="vestwell"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/images/portfolio-companies/snapdocs-dark.png"
+              alt="snapdocs"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/images/portfolio-companies/vendr-small.png"
+              alt="vendr"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/images/portfolio-companies/spapdocs-light.svg"
+              alt="spapdocs"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/images/portfolio-companies/toast.png"
+              alt="toast"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/images/portfolio-companies/connexpay.png"
+              alt="connexpay"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/images/portfolio-companies/connexpay.png"
+              alt="connexpay"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/images/portfolio-companies/mineraltree.png"
+              alt="mineraltree"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/images/portfolio-companies/flywire.png"
+              alt="flywire"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/images/portfolio-companies/quovo.png"
+              alt="quovo"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/images/portfolio-companies/spendesk.svg"
+              alt="spendesk"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/images/portfolio-companies/nota_bene.svg"
+              alt="nota bene"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/images/portfolio-companies/recurly.svg"
+              alt="recurly"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/images/portfolio-companies/fireblocks.svg"
+              alt="fireblocks"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/images/portfolio-companies/kensho.png"
+              alt="kensho"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/images/portfolio-companies/future-advisor.png"
+              alt="future advisor"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/images/portfolio-companies/argyle.png"
+              alt="argyle"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/images/portfolio-companies/snapsheet.png"
+              alt="spansheet"
+            />
+          </div>
+        </main>
+      </div>
     </section>
 
     <!-- footer -->
@@ -731,8 +756,6 @@
     </footer>
 
     <!-- javascript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-
     <script src="./javascript/script.js"></script>
   </body>
 </html>

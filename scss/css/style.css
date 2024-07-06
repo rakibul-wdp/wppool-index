@@ -10,14 +10,6 @@ body {
   background-color: #ededed;
 }
 
-.container {
-  max-width: 1366px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 25px 25px 0 25px;
-}
-
 .title-1 {
   font-size: 78px;
   line-height: 109.9px;
@@ -308,14 +300,6 @@ body {
 
 body {
   background-color: #ededed;
-}
-
-.container {
-  max-width: 1366px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 25px 25px 0 25px;
 }
 
 .title-1 {
@@ -600,19 +584,26 @@ body {
 
 .header {
   background-color: #2042b6;
+  width: calc(100% - 50px);
+  margin: 25px 25px 60px 25px;
 }
-.header nav {
+.header .header-container {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header .header-container nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 8px 30px 8px 18px;
   background-color: gray;
 }
-.header nav .wppool-logo {
+.header .header-container nav .wppool-logo {
   width: 200.52px;
   height: 34.63px;
 }
-.header main {
+.header .header-container main {
   background-image: url("../../assets/images/hero-bg-1.png");
   background-size: 549px 542px;
   background-repeat: no-repeat;
@@ -622,17 +613,17 @@ body {
   justify-content: start;
   padding: 16px 44px 40px 44px;
 }
-.header main aside {
+.header .header-container main aside {
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
   gap: 50px;
 }
-.header main aside div h3 {
+.header .header-container main aside div h3 {
   margin-bottom: -5px;
 }
-.header main .main__content {
+.header .header-container main .main__content {
   background-image: url("../../assets//images/hero-bg-2.svg");
   background-size: auto;
   background-repeat: no-repeat;
@@ -643,7 +634,7 @@ body {
   justify-content: center;
   height: 542px;
 }
-.header main .main__content h1 {
+.header .header-container main .main__content h1 {
   margin-bottom: -6px;
 }
 
@@ -657,14 +648,6 @@ body {
 
 body {
   background-color: #ededed;
-}
-
-.container {
-  max-width: 1366px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 25px 25px 0 25px;
 }
 
 .title-1 {
@@ -949,35 +932,41 @@ body {
 
 .chart {
   background-color: #fff;
+  width: calc(100% - 50px);
+  margin: 0 25px 60px 25px;
+}
+.chart .chart-container {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 24px;
   padding: 0 65px 20px 23px;
-  margin-bottom: 60px;
 }
-.chart aside {
+.chart .chart-container aside {
   background-color: #eff3f6;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.chart aside button {
+.chart .chart-container aside button {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.chart .chart__main .chart__main_title {
+.chart .chart-container .chart__main .chart__main_title {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4px;
 }
-.chart .chart__main .chart__main_title h3 {
+.chart .chart-container .chart__main .chart__main_title h3 {
   color: #191618;
 }
-.chart .chart__main .chart__main_index {
+.chart .chart-container .chart__main .chart__main_index {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -985,7 +974,7 @@ body {
   padding-top: 17px;
   padding-bottom: 19px;
 }
-.chart .chart__main .chart__main_index div {
+.chart .chart-container .chart__main .chart__main_index div {
   background-color: #f3f3f3;
   display: flex;
   align-items: center;
@@ -993,68 +982,68 @@ body {
   border-radius: 6px;
   padding: 10px 10px 10px 14px;
 }
-.chart .chart__main .chart__main_index div div p {
+.chart .chart-container .chart__main .chart__main_index div div p {
   width: 95%;
   text-align: end;
 }
-.chart .chart__main .chart__main_index div div span {
+.chart .chart-container .chart__main .chart__main_index div div span {
   display: inline-block;
   width: 4px;
   height: 30px;
   color: #fc714d;
   border-radius: 1px;
 }
-.chart .chart__main .chart__main_handle {
+.chart .chart-container .chart__main .chart__main_handle {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 19px;
 }
-.chart .chart__main .chart__main_handle .chart__main_handle-large {
+.chart .chart-container .chart__main .chart__main_handle .chart__main_handle-large {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.chart .chart__main .chart__main_handle .chart__main_handle-large button {
+.chart .chart-container .chart__main .chart__main_handle .chart__main_handle-large button {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.chart .chart__main .chart__main_handle .chart__main_handle-small {
+.chart .chart-container .chart__main .chart__main_handle .chart__main_handle-small {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.chart .chart__main .chart__main_visual div {
+.chart .chart-container .chart__main .chart__main_visual div {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
 }
-.chart .chart__main .chart__main_visual div div {
+.chart .chart-container .chart__main .chart__main_visual div div {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
 }
-.chart .chart__main .chart__main_visual div div span {
+.chart .chart-container .chart__main .chart__main_visual div div span {
   display: inline-block;
   width: 10px;
   height: 10px;
 }
-.chart .chart__main .chart__main_visual div div:nth-of-type(1) span {
+.chart .chart-container .chart__main .chart__main_visual div div:nth-of-type(1) span {
   background-color: #fc714d;
 }
-.chart .chart__main .chart__main_visual div div:nth-of-type(2) span {
+.chart .chart-container .chart__main .chart__main_visual div div:nth-of-type(2) span {
   background-color: #615de3;
 }
-.chart .chart__main .chart__main_visual div div:nth-of-type(3) span {
+.chart .chart-container .chart__main .chart__main_visual div div:nth-of-type(3) span {
   background-color: #afcd80;
 }
-.chart .chart__main .chart__main_visual div div:nth-of-type(4) span {
+.chart .chart-container .chart__main .chart__main_visual div div:nth-of-type(4) span {
   background-color: #6f34a1;
 }
-.chart .chart__main .chart__main_visual div div p {
+.chart .chart-container .chart__main .chart__main_visual div div p {
   color: #191618;
 }
 
@@ -1068,14 +1057,6 @@ body {
 
 body {
   background-color: #ededed;
-}
-
-.container {
-  max-width: 1366px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 25px 25px 0 25px;
 }
 
 .title-1 {
@@ -1358,13 +1339,23 @@ body {
   font-weight: 400;
 }
 
-.companies .companies__main {
-  background-color: #fff;
-  border-radius: 20px;
-  padding: 41px 30px 11px 30px;
-  margin-bottom: 40px;
+.companies {
+  margin-bottom: 151px;
 }
-.companies .companies__main .companies__header {
+.companies .companies-main-container {
+  background-color: #fff;
+  width: calc(100% - 50px);
+  margin: 0 25px 40px 25px;
+  border-radius: 20px;
+  box-shadow: 0px 66px 66px 0px rgba(0, 0, 0, 0.0392156863);
+}
+.companies .companies-main-container .companies__main {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 41px 30px 11px 30px;
+}
+.companies .companies-main-container .companies__main .companies__header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1372,7 +1363,7 @@ body {
   gap: 0;
   margin-bottom: 52px;
 }
-.companies .companies__main .companies__header div {
+.companies .companies-main-container .companies__main .companies__header div {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1383,18 +1374,18 @@ body {
   padding: 17px 0px 17px 19px;
   background-color: #f3f3f3;
 }
-.companies .companies__main .companies__header div input {
+.companies .companies-main-container .companies__main .companies__header div input {
   border: none;
   background-color: #f3f3f3;
 }
-.companies .companies__main .companies__table {
+.companies .companies-main-container .companies__main .companies__table {
   height: 25vh;
   overflow-y: auto;
 }
-.companies .companies__main .companies__table table {
+.companies .companies-main-container .companies__main .companies__table table {
   width: 100%;
 }
-.companies .companies__main .companies__table table tr th button {
+.companies .companies-main-container .companies__main .companies__table table tr th button {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1403,13 +1394,11 @@ body {
   border: none;
 }
 .companies .companies__buttons {
-  background-color: #ededed;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 12px;
-  margin-bottom: 151px;
 }
 
 *,
@@ -1422,14 +1411,6 @@ body {
 
 body {
   background-color: #ededed;
-}
-
-.container {
-  max-width: 1366px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 25px 25px 0 25px;
 }
 
 .title-1 {
@@ -1713,15 +1694,21 @@ body {
 }
 
 .future {
-  margin-bottom: 155px;
+  width: calc(100% - 186px);
+  margin: 0 93px 155px 93px;
 }
-.future div h2 {
+.future .future-container {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.future .future-container div h2 {
   margin-bottom: 18px;
 }
-.future div p {
+.future .future-container div p {
   margin-bottom: 26px;
 }
-.future main {
+.future .future-container main {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
@@ -1729,7 +1716,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.future main div {
+.future .future-container main div {
   background-color: #fff;
   width: 220px;
   height: 120px;
@@ -1751,14 +1738,6 @@ body {
   background-color: #ededed;
 }
 
-.container {
-  max-width: 1366px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 25px 25px 0 25px;
-}
-
 .title-1 {
   font-size: 78px;
   line-height: 109.9px;
@@ -2039,13 +2018,19 @@ body {
   font-weight: 400;
 }
 
-.carousel-container {
-  margin-bottom: 191px;
+.carousel-section {
+  width: calc(100% - 186px);
+  margin: 0 93px 191px 93px;
 }
-.carousel-container div {
+.carousel-section .carousel-container {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel-section .carousel-container div {
   margin-bottom: 20px;
 }
-.carousel-container div button {
+.carousel-section .carousel-container div button {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -2056,11 +2041,11 @@ body {
   margin-top: 20px;
   margin-bottom: 15px;
 }
-.carousel-container .wrapper {
+.carousel-section .carousel-container .wrapper {
   width: 100%;
   position: relative;
 }
-.carousel-container .wrapper .carousel-arrow {
+.carousel-section .carousel-container .wrapper .carousel-arrow {
   top: 88%;
   height: 14.15px;
   width: 15.74px;
@@ -2073,14 +2058,14 @@ body {
   border-radius: 50%;
   box-shadow: 0px 36px 36px 0px rgba(0, 0, 0, 0.1215686275);
 }
-.carousel-container .wrapper .left-arrow {
+.carousel-section .carousel-container .wrapper .left-arrow {
   left: 5px;
 }
-.carousel-container .wrapper .right-arrow {
+.carousel-section .carousel-container .wrapper .right-arrow {
   transform: rotate(180deg);
   left: 80px;
 }
-.carousel-container .wrapper .carousel {
+.carousel-section .carousel-container .wrapper .carousel {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc(50% - 80px);
@@ -2091,28 +2076,28 @@ body {
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
-.carousel-container .wrapper .carousel .carousel::-webkit-scrollbar {
+.carousel-section .carousel-container .wrapper .carousel .carousel::-webkit-scrollbar {
   display: none;
 }
-.carousel-container .wrapper .carousel .carousel.no-transition {
+.carousel-section .carousel-container .wrapper .carousel .carousel.no-transition {
   scroll-behavior: auto;
 }
-.carousel-container .wrapper .carousel .carousel.dragging {
+.carousel-section .carousel-container .wrapper .carousel .carousel.dragging {
   scroll-snap-type: none;
   scroll-behavior: auto;
 }
-.carousel-container .wrapper .carousel .carousel.dragging .card {
+.carousel-section .carousel-container .wrapper .carousel .carousel.dragging .card {
   cursor: grab;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
 }
-.carousel-container .wrapper .carousel .carousel :where(.card, .img) {
+.carousel-section .carousel-container .wrapper .carousel .carousel :where(.card, .img) {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.carousel-container .wrapper .carousel .carousel .card {
+.carousel-section .carousel-container .wrapper .carousel .carousel .card {
   scroll-snap-align: start;
   list-style: none;
   background: #fff;
@@ -2120,14 +2105,14 @@ body {
   flex-direction: column;
   border-radius: 8px;
 }
-.carousel-container .wrapper .carousel .card .img img {
+.carousel-section .carousel-container .wrapper .carousel .card .img img {
   width: 580px;
   height: 326px;
   border-radius: 6px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.carousel-container .wrapper .carousel-control {
+.carousel-section .carousel-container .wrapper .carousel-control {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -2135,23 +2120,23 @@ body {
   gap: 0;
   padding: 0 163px;
 }
-.carousel-container .wrapper .carousel-control div {
+.carousel-section .carousel-container .wrapper .carousel-control div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 0;
 }
-.carousel-container .wrapper .carousel-control div p {
+.carousel-section .carousel-container .wrapper .carousel-control div p {
   color: black;
 }
 @media screen and (max-width: 900px) {
-  .carousel-container .wrapper .carousel {
+  .carousel-section .carousel-container .wrapper .carousel {
     grid-auto-columns: calc(50% - 9px);
   }
 }
 @media screen and (max-width: 600px) {
-  .carousel-container .wrapper .carousel {
+  .carousel-section .carousel-container .wrapper .carousel {
     grid-auto-columns: 100%;
   }
 }
@@ -2168,14 +2153,6 @@ body {
   background-color: #ededed;
 }
 
-.container {
-  max-width: 1366px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 25px 25px 0 25px;
-}
-
 .title-1 {
   font-size: 78px;
   line-height: 109.9px;
@@ -2456,32 +2433,41 @@ body {
   font-weight: 400;
 }
 
-.stories .stories-heading {
+.stories {
+  width: calc(100% - 186px);
+  margin: 0 93px 0 93px;
+}
+.stories .stories-container {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.stories .stories-container .stories-heading {
   margin-bottom: 94px;
 }
-.stories .stories-heading h2 {
+.stories .stories-container .stories-heading h2 {
   margin-bottom: 10px;
 }
-.stories main {
+.stories .stories-container main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   grid-gap: 88px 20px;
 }
-.stories main div {
+.stories .stories-container main div {
   background-color: #fff;
   padding: 0 37px 20px 20px;
   border-radius: 8px;
   position: relative;
 }
-.stories main div img {
+.stories .stories-container main div img {
   width: 120px;
   height: 120px;
   margin-top: -48px;
   border-radius: 4px;
   box-shadow: 0px 16px 12px 0px rgba(0, 0, 0, 0.0392156863);
 }
-.stories main div div {
+.stories .stories-container main div div {
   background-color: #fff;
   padding: 6px 5px 5px 6px;
   border-radius: 4px 0 4px 0;
@@ -2489,14 +2475,14 @@ body {
   top: -48px;
   left: 20px;
 }
-.stories main div div .avatar-corner-icon {
+.stories .stories-container main div div .avatar-corner-icon {
   width: 49px;
   height: 7px;
 }
-.stories main .stories-details {
+.stories .stories-container main .stories-details {
   margin: 18px 0 2px;
 }
-.stories main button {
+.stories .stories-container main button {
   margin-top: 14px;
 }
 
@@ -2510,14 +2496,6 @@ body {
 
 body {
   background-color: #ededed;
-}
-
-.container {
-  max-width: 1366px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 25px 25px 0 25px;
 }
 
 .title-1 {
@@ -2801,6 +2779,13 @@ body {
 }
 
 .about {
+  width: calc(100% - 186px);
+  margin: 0 93px 0 93px;
+}
+.about .about-container {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #fff;
   display: flex;
   flex-direction: row;
@@ -2810,17 +2795,17 @@ body {
   padding-left: 72px;
   border-radius: 12px;
 }
-.about div h4 {
+.about .about-container div h4 {
   margin: 0px 0 10px 0;
 }
-.about div p span {
+.about .about-container div p span {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
-.about div button {
+.about .about-container div button {
   margin-top: 30px;
 }
-.about img {
+.about .about-container img {
   width: 523px;
   height: 420px;
 }
@@ -2835,14 +2820,6 @@ body {
 
 body {
   background-color: #ededed;
-}
-
-.container {
-  max-width: 1366px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 25px 25px 0 25px;
 }
 
 .title-1 {
@@ -3138,20 +3115,38 @@ body {
   margin-bottom: 278px;
 }
 
-.divider-1 {
-  margin: 100px 68px 80px 68px;
+.divider-container-1 {
+  width: calc(100% - 186px);
+  margin: 100px 93px 80px 93px;
+}
+.divider-container-1 .divider-1 {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid #90b8f0;
 }
 
-.divider-2 {
-  margin: 100px 68px 126px 68px;
+.divider-container-2 {
+  width: calc(100% - 186px);
+  margin: 100px 93px 126px 93px;
+}
+.divider-container-2 .divider-2 {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid #90b8f0;
 }
 
 .portfolio-companies {
-  margin-bottom: 58px;
+  width: calc(100% - 186px);
+  margin: 0 93px 58px 93px;
 }
-.portfolio-companies main {
+.portfolio-companies .portfolio-companies-container {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.portfolio-companies .portfolio-companies-container main {
   margin-top: 48px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -3160,7 +3155,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.portfolio-companies main div {
+.portfolio-companies .portfolio-companies-container main div {
   background-color: #fff;
   width: 220px;
   height: 120px;

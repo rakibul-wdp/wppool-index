@@ -2,33 +2,40 @@
 @import "./variables";
 
 .future {
-  margin-bottom: 155px;
+  width: calc(100% - 186px);
+  margin: 0 93px 155px 93px;
 
-  div {
-    h2 {
-      margin-bottom: 18px;
-    }
-    p {
-      margin-bottom: 26px;
-    }
-  }
-
-  main {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 20px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+  .future-container {
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
 
     div {
-      background-color: #fff;
-      width: 220px;
-      height: 120px;
-      display: flex;
+      h2 {
+        margin-bottom: 18px;
+      }
+      p {
+        margin-bottom: 26px;
+      }
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 20px;
+      text-align: center;
       align-items: center;
       justify-content: center;
-      border-radius: 6px;
+
+      div {
+        background-color: #fff;
+        width: 220px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+      }
     }
   }
 }

@@ -2,30 +2,38 @@
 @import "./variables";
 
 .about {
-  background-color: #fff;
-  @include displayProperty(row, center, space-between, 200px);
-  padding-left: 72px;
-  border-radius: 12px;
+  width: calc(100% - 186px);
+  margin: 0 93px 0 93px;
 
-  div {
-    h4 {
-      margin: 0px 0 10px 0;
-    }
+  .about-container {
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    @include displayProperty(row, center, space-between, 200px);
+    padding-left: 72px;
+    border-radius: 12px;
 
-    p {
-      span {
-        text-decoration: underline;
-        text-underline-offset: 4px;
+    div {
+      h4 {
+        margin: 0px 0 10px 0;
+      }
+
+      p {
+        span {
+          text-decoration: underline;
+          text-underline-offset: 4px;
+        }
+      }
+
+      button {
+        margin-top: 30px;
       }
     }
 
-    button {
-      margin-top: 30px;
+    img {
+      width: 523px;
+      height: 420px;
     }
-  }
-
-  img {
-    width: 523px;
-    height: 420px;
   }
 }
