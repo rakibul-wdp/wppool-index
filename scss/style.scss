@@ -8,6 +8,7 @@
 @import "./partials/stories";
 @import "./partials/about";
 @import "./partials/footer";
+@import "./partials/breakpoints";
 
 .divider-container-1 {
   width: calc(100% - 186px);
@@ -63,20 +64,6 @@
       }
     }
   }
-}
-
-.check-nantes {
-  font-size: 48px;
-  font-family: "Nantes", sans-serif;
-}
-.check-messina {
-  margin-bottom: 20px;
-  font-family: "Messina Sans", sans-serif;
-}
-.check-neue-haas {
-  margin: 20px 0 20px 0;
-  font-size: 24px;
-  font-family: "Neue Haas Unica W1G", sans-serif;
 }
 
 // nav {

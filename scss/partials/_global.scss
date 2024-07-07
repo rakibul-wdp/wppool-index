@@ -15,6 +15,7 @@
 }
 
 @import "variables";
+@import "breakpoints";
 
 *,
 *::before,
@@ -48,7 +49,7 @@ body {
   font-size: $fontSize;
   line-height: $lineHeight;
   color: $color;
-  font-family: "Nantes";
+  font-family: "Nantes", sans-serif;
   font-weight: 400;
 }
 
@@ -56,76 +57,937 @@ body {
   font-size: $fontSize;
   line-height: $lineHeight;
   color: $color;
-  font-family: $fontFamily;
+  font-family: $fontFamily, sans-serif;
   font-weight: $fontWeight;
 }
 
-$titleValues: (1, 78px, 109.9px, #fff), (2, 48px, 67.63px, #191618),
-  (3, 48px, 57.6px, #191618), (4, 42px, 59.18px, #fff), (5, 36px, 50.72px, #fff),
-  (6, 36px, 48.96px, #000000), (7, 30px, 42.27px, #7d7f81),
-  (8, 30px, 36px, #fc714d);
+$titleValues: (
+  1: (
+    xs: (
+      font-size: 24px,
+      line-height: 32px,
+    ),
+    sm: (
+      font-size: 36px,
+      line-height: 48px,
+    ),
+    md: (
+      font-size: 48px,
+      line-height: 64px,
+    ),
+    lg: (
+      font-size: 60px,
+      line-height: 80px,
+    ),
+    xl: (
+      font-size: 78px,
+      line-height: 109.9px,
+    ),
+    color: #fff,
+  ),
+  2: (
+    xs: (
+      font-size: 20px,
+      line-height: 28px,
+    ),
+    sm: (
+      font-size: 28px,
+      line-height: 38px,
+    ),
+    md: (
+      font-size: 36px,
+      line-height: 48px,
+    ),
+    lg: (
+      font-size: 44px,
+      line-height: 58px,
+    ),
+    xl: (
+      font-size: 48px,
+      line-height: 67.63px,
+    ),
+    color: #191618,
+  ),
+  3: (
+    xs: (
+      font-size: 20px,
+      line-height: 28px,
+    ),
+    sm: (
+      font-size: 28px,
+      line-height: 38px,
+    ),
+    md: (
+      font-size: 36px,
+      line-height: 48px,
+    ),
+    lg: (
+      font-size: 44px,
+      line-height: 58px,
+    ),
+    xl: (
+      font-size: 48px,
+      line-height: 57.6px,
+    ),
+    color: #191618,
+  ),
+  4: (
+    xs: (
+      font-size: 18px,
+      line-height: 24px,
+    ),
+    sm: (
+      font-size: 24px,
+      line-height: 32px,
+    ),
+    md: (
+      font-size: 30px,
+      line-height: 40px,
+    ),
+    lg: (
+      font-size: 36px,
+      line-height: 48px,
+    ),
+    xl: (
+      font-size: 42px,
+      line-height: 59.18px,
+    ),
+    color: #fff,
+  ),
+  5: (
+    xs: (
+      font-size: 16px,
+      line-height: 22px,
+    ),
+    sm: (
+      font-size: 22px,
+      line-height: 28px,
+    ),
+    md: (
+      font-size: 28px,
+      line-height: 36px,
+    ),
+    lg: (
+      font-size: 32px,
+      line-height: 44px,
+    ),
+    xl: (
+      font-size: 36px,
+      line-height: 50.72px,
+    ),
+    color: #fff,
+  ),
+  6: (
+    xs: (
+      font-size: 16px,
+      line-height: 22px,
+    ),
+    sm: (
+      font-size: 22px,
+      line-height: 28px,
+    ),
+    md: (
+      font-size: 28px,
+      line-height: 36px,
+    ),
+    lg: (
+      font-size: 32px,
+      line-height: 44px,
+    ),
+    xl: (
+      font-size: 36px,
+      line-height: 48.96px,
+    ),
+    color: #000,
+  ),
+  7: (
+    xs: (
+      font-size: 14px,
+      line-height: 20px,
+    ),
+    sm: (
+      font-size: 18px,
+      line-height: 24px,
+    ),
+    md: (
+      font-size: 22px,
+      line-height: 28px,
+    ),
+    lg: (
+      font-size: 26px,
+      line-height: 34px,
+    ),
+    xl: (
+      font-size: 30px,
+      line-height: 42.27px,
+    ),
+    color: #7d7f81,
+  ),
+  8: (
+    xs: (
+      font-size: 14px,
+      line-height: 20px,
+    ),
+    sm: (
+      font-size: 18px,
+      line-height: 24px,
+    ),
+    md: (
+      font-size: 22px,
+      line-height: 28px,
+    ),
+    lg: (
+      font-size: 26px,
+      line-height: 34px,
+    ),
+    xl: (
+      font-size: 30px,
+      line-height: 36px,
+    ),
+    color: #fc714d,
+  ),
+);
 
-@each $titleValue in $titleValues {
-  $index: nth($titleValue, 1);
-  $fontSize: nth($titleValue, 2);
-  $lineHeight: nth($titleValue, 3);
-  $color: nth($titleValue, 4);
-
+@each $index, $values in $titleValues {
   .title-#{$index} {
-    @include title($fontSize, $lineHeight, $color);
+    @include title(
+      map-get(map-get($values, xl), font-size),
+      map-get(map-get($values, xl), line-height),
+      map-get($values, color)
+    );
+
+    @include xs {
+      font-size: map-get(map-get($values, xs), font-size);
+      line-height: map-get(map-get($values, xs), line-height);
+    }
+    @include sm {
+      font-size: map-get(map-get($values, sm), font-size);
+      line-height: map-get(map-get($values, sm), line-height);
+    }
+    @include md {
+      font-size: map-get(map-get($values, md), font-size);
+      line-height: map-get(map-get($values, md), line-height);
+    }
+    @include lg {
+      font-size: map-get(map-get($values, lg), font-size);
+      line-height: map-get(map-get($values, lg), line-height);
+    }
+    @include xl {
+      font-size: map-get(map-get($values, xl), font-size);
+      line-height: map-get(map-get($values, xl), line-height);
+    }
   }
 }
 
 .subtitle {
-  font-size: 24px;
-  line-height: 28.8px;
   color: #191618;
-  font-family: "Nantes";
+  font-family: "Nantes", sans-serif;
   font-weight: 400;
+
+  @include xs {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  @include sm {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  @include md {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  @include lg {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+  @include xl {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
 }
 
-$paragraphValues: (1, 21px, 25.2px, #fff, "Messina Sans", 350),
-  (2, 21px, 25.2px, #2042b6, "Nantes", 400),
-  (3, 20px, 30.12px, #115cd9, "Neue Haas Unica W1G", 400),
-  (4, 20px, 28px, #191618, "Messina Sans", 400),
-  (5, 20px, 24px, #9fa0a1, "Messina Sans", 700),
-  (6, 20px, 24px, #191618, "Messina Sans", 350),
-  (7, 18px, 21.6px, #191618, "Messina Sans", 400),
-  (8, 16px, 25.6px, #191618, "Messina Sans", 350),
-  (9, 16px, 24.1px, #cdcdcd, "Neue Haas Unica W1G", 400),
-  (10, 16px, 24px, #191618, "Messina Sans", 350),
-  (11, 16px, 23.09px, #fff, "Messina Sans", 400),
-  (12, 16px, 22.54px, #fff, "Nantes", 400),
-  (13, 16px, 22.4px, #191618, "Nantes", 400),
-  (14, 16px, 19.2px, #000000, "Messina Sans", 700),
-  (15, 16px, 19.2px, #000000, "Nantes", 400),
-  (16, 16px, 19.2px, #fff, "Messina Sans", 400),
-  (17, 14px, 21px, #000000, "Inter", 700),
-  (18, 14px, 21px, #191618, "Inter", 400),
-  (19, 14px, 21.08px, #fff, "Neue Haas Unica W1G", 400),
-  (20, 14px, 19.6px, #2042b6, "Messina Sans", 400),
-  (21, 14px, 19.04px, #9fa0a1, "Messina Sans", 700),
-  (22, 14px, 19.04px, #000000, "Messina Sans", 400),
-  (23, 14px, 16.8px, #000000, "Messina Sans", 400),
-  (24, 12px, 18.07px, #191618, "Neue Haas Unica W1G", 400),
-  (25, 12px, 17.32px, #fff, "Messina Sans", 400),
-  (26, 12px, 14.4px, #191618, "Messina Sans", 400);
+$paragraphValues: (
+  1: (
+    xs: (
+      font-size: 16px,
+      line-height: 22px,
+    ),
+    sm: (
+      font-size: 18px,
+      line-height: 24px,
+    ),
+    md: (
+      font-size: 20px,
+      line-height: 26px,
+    ),
+    lg: (
+      font-size: 21px,
+      line-height: 25.2px,
+    ),
+    xl: (
+      font-size: 21px,
+      line-height: 25.2px,
+    ),
+    color: #fff,
+    font-family: "Messina Sans",
+    font-weight: 350,
+  ),
+  2: (
+    xs: (
+      font-size: 16px,
+      line-height: 22px,
+    ),
+    sm: (
+      font-size: 18px,
+      line-height: 24px,
+    ),
+    md: (
+      font-size: 20px,
+      line-height: 26px,
+    ),
+    lg: (
+      font-size: 21px,
+      line-height: 25.2px,
+    ),
+    xl: (
+      font-size: 21px,
+      line-height: 25.2px,
+    ),
+    color: #2042b6,
+    font-family: "Nantes",
+    font-weight: 400,
+  ),
+  3: (
+    xs: (
+      font-size: 14px,
+      line-height: 20px,
+    ),
+    sm: (
+      font-size: 16px,
+      line-height: 22px,
+    ),
+    md: (
+      font-size: 18px,
+      line-height: 24px,
+    ),
+    lg: (
+      font-size: 20px,
+      line-height: 30.12px,
+    ),
+    xl: (
+      font-size: 20px,
+      line-height: 30.12px,
+    ),
+    color: #115cd9,
+    font-family: "Neue Haas Unica W1G",
+    font-weight: 400,
+  ),
+  4: (
+    xs: (
+      font-size: 14px,
+      line-height: 20px,
+    ),
+    sm: (
+      font-size: 16px,
+      line-height: 22px,
+    ),
+    md: (
+      font-size: 18px,
+      line-height: 24px,
+    ),
+    lg: (
+      font-size: 20px,
+      line-height: 28px,
+    ),
+    xl: (
+      font-size: 20px,
+      line-height: 28px,
+    ),
+    color: #191618,
+    font-family: "Messina Sans",
+    font-weight: 400,
+  ),
+  5: (
+    xs: (
+      font-size: 14px,
+      line-height: 20px,
+    ),
+    sm: (
+      font-size: 16px,
+      line-height: 22px,
+    ),
+    md: (
+      font-size: 18px,
+      line-height: 24px,
+    ),
+    lg: (
+      font-size: 20px,
+      line-height: 24px,
+    ),
+    xl: (
+      font-size: 20px,
+      line-height: 24px,
+    ),
+    color: #9fa0a1,
+    font-family: "Messina Sans",
+    font-weight: 700,
+  ),
+  6: (
+    xs: (
+      font-size: 14px,
+      line-height: 20px,
+    ),
+    sm: (
+      font-size: 16px,
+      line-height: 22px,
+    ),
+    md: (
+      font-size: 18px,
+      line-height: 24px,
+    ),
+    lg: (
+      font-size: 20px,
+      line-height: 24px,
+    ),
+    xl: (
+      font-size: 20px,
+      line-height: 24px,
+    ),
+    color: #191618,
+    font-family: "Messina Sans",
+    font-weight: 350,
+  ),
+  7: (
+    xs: (
+      font-size: 14px,
+      line-height: 20px,
+    ),
+    sm: (
+      font-size: 16px,
+      line-height: 22px,
+    ),
+    md: (
+      font-size: 17px,
+      line-height: 24px,
+    ),
+    lg: (
+      font-size: 18px,
+      line-height: 21.6px,
+    ),
+    xl: (
+      font-size: 18px,
+      line-height: 21.6px,
+    ),
+    color: #191618,
+    font-family: "Messina Sans",
+    font-weight: 400,
+  ),
+  8: (
+    xs: (
+      font-size: 14px,
+      line-height: 20px,
+    ),
+    sm: (
+      font-size: 15px,
+      line-height: 21px,
+    ),
+    md: (
+      font-size: 16px,
+      line-height: 23px,
+    ),
+    lg: (
+      font-size: 16px,
+      line-height: 25.6px,
+    ),
+    xl: (
+      font-size: 16px,
+      line-height: 25.6px,
+    ),
+    color: #191618,
+    font-family: "Messina Sans",
+    font-weight: 350,
+  ),
+  9: (
+    xs: (
+      font-size: 14px,
+      line-height: 20px,
+    ),
+    sm: (
+      font-size: 15px,
+      line-height: 21px,
+    ),
+    md: (
+      font-size: 16px,
+      line-height: 23px,
+    ),
+    lg: (
+      font-size: 16px,
+      line-height: 24.1px,
+    ),
+    xl: (
+      font-size: 16px,
+      line-height: 24.1px,
+    ),
+    color: #cdcdcd,
+    font-family: "Neue Haas Unica W1G",
+    font-weight: 400,
+  ),
+  10: (
+    xs: (
+      font-size: 14px,
+      line-height: 20px,
+    ),
+    sm: (
+      font-size: 15px,
+      line-height: 21px,
+    ),
+    md: (
+      font-size: 16px,
+      line-height: 23px,
+    ),
+    lg: (
+      font-size: 16px,
+      line-height: 24px,
+    ),
+    xl: (
+      font-size: 16px,
+      line-height: 24px,
+    ),
+    color: #191618,
+    font-family: "Messina Sans",
+    font-weight: 350,
+  ),
+  11: (
+    xs: (
+      font-size: 14px,
+      line-height: 20px,
+    ),
+    sm: (
+      font-size: 15px,
+      line-height: 21px,
+    ),
+    md: (
+      font-size: 16px,
+      line-height: 23px,
+    ),
+    lg: (
+      font-size: 16px,
+      line-height: 23.09px,
+    ),
+    xl: (
+      font-size: 16px,
+      line-height: 23.09px,
+    ),
+    color: #fff,
+    font-family: "Messina Sans",
+    font-weight: 400,
+  ),
+  12: (
+    xs: (
+      font-size: 14px,
+      line-height: 20px,
+    ),
+    sm: (
+      font-size: 15px,
+      line-height: 21px,
+    ),
+    md: (
+      font-size: 16px,
+      line-height: 23px,
+    ),
+    lg: (
+      font-size: 16px,
+      line-height: 22.54px,
+    ),
+    xl: (
+      font-size: 16px,
+      line-height: 22.54px,
+    ),
+    color: #fff,
+    font-family: "Nantes",
+    font-weight: 400,
+  ),
+  13: (
+    xs: (
+      font-size: 14px,
+      line-height: 20px,
+    ),
+    sm: (
+      font-size: 15px,
+      line-height: 21px,
+    ),
+    md: (
+      font-size: 16px,
+      line-height: 23px,
+    ),
+    lg: (
+      font-size: 16px,
+      line-height: 22.4px,
+    ),
+    xl: (
+      font-size: 16px,
+      line-height: 22.4px,
+    ),
+    color: #191618,
+    font-family: "Nantes",
+    font-weight: 400,
+  ),
+  14: (
+    xs: (
+      font-size: 14px,
+      line-height: 20px,
+    ),
+    sm: (
+      font-size: 15px,
+      line-height: 21px,
+    ),
+    md: (
+      font-size: 16px,
+      line-height: 23px,
+    ),
+    lg: (
+      font-size: 16px,
+      line-height: 19.2px,
+    ),
+    xl: (
+      font-size: 16px,
+      line-height: 19.2px,
+    ),
+    color: #000000,
+    font-family: "Messina Sans",
+    font-weight: 700,
+  ),
+  15: (
+    xs: (
+      font-size: 14px,
+      line-height: 20px,
+    ),
+    sm: (
+      font-size: 15px,
+      line-height: 21px,
+    ),
+    md: (
+      font-size: 16px,
+      line-height: 23px,
+    ),
+    lg: (
+      font-size: 16px,
+      line-height: 19.2px,
+    ),
+    xl: (
+      font-size: 16px,
+      line-height: 19.2px,
+    ),
+    color: #000000,
+    font-family: "Nantes",
+    font-weight: 400,
+  ),
+  16: (
+    xs: (
+      font-size: 14px,
+      line-height: 20px,
+    ),
+    sm: (
+      font-size: 15px,
+      line-height: 21px,
+    ),
+    md: (
+      font-size: 16px,
+      line-height: 23px,
+    ),
+    lg: (
+      font-size: 16px,
+      line-height: 19.2px,
+    ),
+    xl: (
+      font-size: 16px,
+      line-height: 19.2px,
+    ),
+    color: #fff,
+    font-family: "Messina Sans",
+    font-weight: 400,
+  ),
+  17: (
+    xs: (
+      font-size: 13px,
+      line-height: 19px,
+    ),
+    sm: (
+      font-size: 13px,
+      line-height: 19px,
+    ),
+    md: (
+      font-size: 14px,
+      line-height: 21px,
+    ),
+    lg: (
+      font-size: 14px,
+      line-height: 21px,
+    ),
+    xl: (
+      font-size: 14px,
+      line-height: 21px,
+    ),
+    color: #000000,
+    font-family: "Inter",
+    font-weight: 700,
+  ),
+  18: (
+    xs: (
+      font-size: 13px,
+      line-height: 19px,
+    ),
+    sm: (
+      font-size: 13px,
+      line-height: 19px,
+    ),
+    md: (
+      font-size: 14px,
+      line-height: 21px,
+    ),
+    lg: (
+      font-size: 14px,
+      line-height: 21px,
+    ),
+    xl: (
+      font-size: 14px,
+      line-height: 21px,
+    ),
+    color: #191618,
+    font-family: "Inter",
+    font-weight: 400,
+  ),
+  19: (
+    xs: (
+      font-size: 13px,
+      line-height: 19px,
+    ),
+    sm: (
+      font-size: 13px,
+      line-height: 19px,
+    ),
+    md: (
+      font-size: 14px,
+      line-height: 21px,
+    ),
+    lg: (
+      font-size: 14px,
+      line-height: 21.08px,
+    ),
+    xl: (
+      font-size: 14px,
+      line-height: 21.08px,
+    ),
+    color: #fff,
+    font-family: "Neue Haas Unica W1G",
+    font-weight: 400,
+  ),
+  20: (
+    xs: (
+      font-size: 13px,
+      line-height: 19px,
+    ),
+    sm: (
+      font-size: 13px,
+      line-height: 19px,
+    ),
+    md: (
+      font-size: 14px,
+      line-height: 21px,
+    ),
+    lg: (
+      font-size: 14px,
+      line-height: 19.6px,
+    ),
+    xl: (
+      font-size: 14px,
+      line-height: 19.6px,
+    ),
+    color: #2042b6,
+    font-family: "Messina Sans",
+    font-weight: 400,
+  ),
+  21: (
+    xs: (
+      font-size: 13px,
+      line-height: 19px,
+    ),
+    sm: (
+      font-size: 13px,
+      line-height: 19px,
+    ),
+    md: (
+      font-size: 14px,
+      line-height: 21px,
+    ),
+    lg: (
+      font-size: 14px,
+      line-height: 19.04px,
+    ),
+    xl: (
+      font-size: 14px,
+      line-height: 19.04px,
+    ),
+    color: #9fa0a1,
+    font-family: "Messina Sans",
+    font-weight: 700,
+  ),
+  22: (
+    xs: (
+      font-size: 13px,
+      line-height: 19px,
+    ),
+    sm: (
+      font-size: 13px,
+      line-height: 19px,
+    ),
+    md: (
+      font-size: 14px,
+      line-height: 21px,
+    ),
+    lg: (
+      font-size: 14px,
+      line-height: 19.04px,
+    ),
+    xl: (
+      font-size: 14px,
+      line-height: 19.04px,
+    ),
+    color: #000000,
+    font-family: "Messina Sans",
+    font-weight: 400,
+  ),
+  23: (
+    xs: (
+      font-size: 13px,
+      line-height: 19px,
+    ),
+    sm: (
+      font-size: 13px,
+      line-height: 19px,
+    ),
+    md: (
+      font-size: 14px,
+      line-height: 21px,
+    ),
+    lg: (
+      font-size: 14px,
+      line-height: 16.8px,
+    ),
+    xl: (
+      font-size: 14px,
+      line-height: 16.8px,
+    ),
+    color: #000000,
+    font-family: "Messina Sans",
+    font-weight: 400,
+  ),
+  24: (
+    xs: (
+      font-size: 12px,
+      line-height: 17px,
+    ),
+    sm: (
+      font-size: 12px,
+      line-height: 17px,
+    ),
+    md: (
+      font-size: 12px,
+      line-height: 18px,
+    ),
+    lg: (
+      font-size: 12px,
+      line-height: 18.07px,
+    ),
+    xl: (
+      font-size: 12px,
+      line-height: 18.07px,
+    ),
+    color: #191618,
+    font-family: "Neue Haas Unica W1G",
+    font-weight: 400,
+  ),
+  25: (
+    xs: (
+      font-size: 12px,
+      line-height: 17px,
+    ),
+    sm: (
+      font-size: 12px,
+      line-height: 17px,
+    ),
+    md: (
+      font-size: 12px,
+      line-height: 18px,
+    ),
+    lg: (
+      font-size: 12px,
+      line-height: 17.32px,
+    ),
+    xl: (
+      font-size: 12px,
+      line-height: 17.32px,
+    ),
+    color: #fff,
+    font-family: "Messina Sans",
+    font-weight: 400,
+  ),
+  26: (
+    xs: (
+      font-size: 12px,
+      line-height: 17px,
+    ),
+    sm: (
+      font-size: 12px,
+      line-height: 17px,
+    ),
+    md: (
+      font-size: 12px,
+      line-height: 18px,
+    ),
+    lg: (
+      font-size: 12px,
+      line-height: 14.4px,
+    ),
+    xl: (
+      font-size: 12px,
+      line-height: 14.4px,
+    ),
+    color: #191618,
+    font-family: "Messina Sans",
+    font-weight: 400,
+  ),
+);
 
-@each $paragraphValue in $paragraphValues {
-  $index: nth($paragraphValue, 1);
-  $fontSize: nth($paragraphValue, 2);
-  $lineHeight: nth($paragraphValue, 3);
-  $color: nth($paragraphValue, 4);
-  $fontFamily: nth($paragraphValue, 5);
-  $fontWeight: nth($paragraphValue, 6);
-
+@each $index, $values in $paragraphValues {
   .paragraph-#{$index} {
     @include paragraph(
-      $fontSize,
-      $lineHeight,
-      $color,
-      $fontFamily,
-      $fontWeight
+      map-get(map-get($values, xl), font-size),
+      map-get(map-get($values, xl), line-height),
+      map-get($values, color),
+      map-get($values, font-family),
+      map-get($values, font-weight)
     );
+
+    @include xs {
+      font-size: map-get(map-get($values, xs), font-size);
+      line-height: map-get(map-get($values, xs), line-height);
+    }
+    @include sm {
+      font-size: map-get(map-get($values, sm), font-size);
+      line-height: map-get(map-get($values, sm), line-height);
+    }
+    @include md {
+      font-size: map-get(map-get($values, md), font-size);
+      line-height: map-get(map-get($values, md), line-height);
+    }
+    @include lg {
+      font-size: map-get(map-get($values, lg), font-size);
+      line-height: map-get(map-get($values, lg), line-height);
+    }
+    @include xl {
+      font-size: map-get(map-get($values, xl), font-size);
+      line-height: map-get(map-get($values, xl), line-height);
+    }
   }
 }
