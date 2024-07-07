@@ -103,19 +103,42 @@
         }
 
         .nav-share-icon-dark {
-          border: 1px solid #afcd80;
-          border-radius: 100%;
-          padding: 14px;
+          @include xs {
+            display: none;
+            border: 1px solid #afcd80;
+            border-radius: 100%;
+            padding: 14px;
+          }
+          @include md {
+            display: block;
+            border: 1px solid #afcd80;
+            border-radius: 100%;
+            padding: 14px;
+          }
         }
 
         .nav-btn {
-          background-color: transparent;
-          padding: 17px 16px;
-          border: 1px solid #115cd9;
-          border-radius: 124px;
+          @include xs {
+            display: none;
+            background-color: transparent;
+            padding: 17px 16px;
+            border: 1px solid #115cd9;
+            border-radius: 124px;
 
-          p {
-            color: $primary-text-color;
+            p {
+              color: $primary-text-color;
+            }
+          }
+          @include md {
+            display: block;
+            background-color: transparent;
+            padding: 17px 16px;
+            border: 1px solid #115cd9;
+            border-radius: 124px;
+
+            p {
+              color: $primary-text-color;
+            }
           }
         }
 
@@ -137,9 +160,18 @@
         }
 
         .nav-share-icon {
-          border: 1px solid #ffffff;
-          border-radius: 100%;
-          padding: 14px;
+          @include xs {
+            display: none;
+            border: 1px solid #ffffff;
+            border-radius: 100%;
+            padding: 14px;
+          }
+          @include md {
+            display: block;
+            border: 1px solid #ffffff;
+            border-radius: 100%;
+            padding: 14px;
+          }
         }
 
         .nav-share-icon-dark {
@@ -147,10 +179,20 @@
         }
 
         .nav-btn {
-          background-color: transparent;
-          padding: 17px 16px;
-          border: 1px solid #ffffff;
-          border-radius: 124px;
+          @include xs {
+            display: none;
+            background-color: transparent;
+            padding: 17px 16px;
+            border: 1px solid #ffffff;
+            border-radius: 124px;
+          }
+          @include md {
+            display: block;
+            background-color: transparent;
+            padding: 17px 16px;
+            border: 1px solid #ffffff;
+            border-radius: 124px;
+          }
         }
 
         .nav-menu-btn {
@@ -181,21 +223,34 @@
       background-size: 549px 542px;
       background-repeat: no-repeat;
       background-position: center center;
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-start;
+      @include displayProperty(row, flex-end, flex-start, 0);
       padding: 41px 44px 40px 44px;
 
       aside {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 50px;
+        @include xs {
+          display: none;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 50px;
 
-        div {
-          h3 {
-            margin-bottom: -5px;
+          div {
+            h3 {
+              margin-bottom: -5px;
+            }
+          }
+        }
+        @include lg {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 50px;
+
+          div {
+            h3 {
+              margin-bottom: -5px;
+            }
           }
         }
       }
@@ -209,6 +264,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
         height: 542px;
 
         h1 {

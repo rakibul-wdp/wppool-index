@@ -2804,19 +2804,45 @@ body {
 .header .header-container .navbar-container .bg-white .nav-share-icon {
   display: none;
 }
-.header .header-container .navbar-container .bg-white .nav-share-icon-dark {
-  border: 1px solid #afcd80;
-  border-radius: 100%;
-  padding: 14px;
+@media (min-width: 0) {
+  .header .header-container .navbar-container .bg-white .nav-share-icon-dark {
+    display: none;
+    border: 1px solid #afcd80;
+    border-radius: 100%;
+    padding: 14px;
+  }
 }
-.header .header-container .navbar-container .bg-white .nav-btn {
-  background-color: transparent;
-  padding: 17px 16px;
-  border: 1px solid #115cd9;
-  border-radius: 124px;
+@media (min-width: 768px) {
+  .header .header-container .navbar-container .bg-white .nav-share-icon-dark {
+    display: block;
+    border: 1px solid #afcd80;
+    border-radius: 100%;
+    padding: 14px;
+  }
 }
-.header .header-container .navbar-container .bg-white .nav-btn p {
-  color: #191618;
+@media (min-width: 0) {
+  .header .header-container .navbar-container .bg-white .nav-btn {
+    display: none;
+    background-color: transparent;
+    padding: 17px 16px;
+    border: 1px solid #115cd9;
+    border-radius: 124px;
+  }
+  .header .header-container .navbar-container .bg-white .nav-btn p {
+    color: #191618;
+  }
+}
+@media (min-width: 768px) {
+  .header .header-container .navbar-container .bg-white .nav-btn {
+    display: block;
+    background-color: transparent;
+    padding: 17px 16px;
+    border: 1px solid #115cd9;
+    border-radius: 124px;
+  }
+  .header .header-container .navbar-container .bg-white .nav-btn p {
+    color: #191618;
+  }
 }
 .header .header-container .navbar-container .bg-white .nav-menu-btn {
   background-color: transparent;
@@ -2830,19 +2856,42 @@ body {
 .header .header-container .navbar-container .bg-transparent .wppool-logo-dark {
   display: none;
 }
-.header .header-container .navbar-container .bg-transparent .nav-share-icon {
-  border: 1px solid #ffffff;
-  border-radius: 100%;
-  padding: 14px;
+@media (min-width: 0) {
+  .header .header-container .navbar-container .bg-transparent .nav-share-icon {
+    display: none;
+    border: 1px solid #ffffff;
+    border-radius: 100%;
+    padding: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .header .header-container .navbar-container .bg-transparent .nav-share-icon {
+    display: block;
+    border: 1px solid #ffffff;
+    border-radius: 100%;
+    padding: 14px;
+  }
 }
 .header .header-container .navbar-container .bg-transparent .nav-share-icon-dark {
   display: none;
 }
-.header .header-container .navbar-container .bg-transparent .nav-btn {
-  background-color: transparent;
-  padding: 17px 16px;
-  border: 1px solid #ffffff;
-  border-radius: 124px;
+@media (min-width: 0) {
+  .header .header-container .navbar-container .bg-transparent .nav-btn {
+    display: none;
+    background-color: transparent;
+    padding: 17px 16px;
+    border: 1px solid #ffffff;
+    border-radius: 124px;
+  }
+}
+@media (min-width: 768px) {
+  .header .header-container .navbar-container .bg-transparent .nav-btn {
+    display: block;
+    background-color: transparent;
+    padding: 17px 16px;
+    border: 1px solid #ffffff;
+    border-radius: 124px;
+  }
 }
 .header .header-container .navbar-container .bg-transparent .nav-menu-btn {
   background-color: transparent;
@@ -2867,19 +2916,35 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   display: flex;
+  flex-direction: row;
   align-items: flex-end;
   justify-content: flex-start;
+  gap: 0;
   padding: 41px 44px 40px 44px;
 }
-.header .header-container main aside {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 50px;
+@media (min-width: 0) {
+  .header .header-container main aside {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+  }
+  .header .header-container main aside div h3 {
+    margin-bottom: -5px;
+  }
 }
-.header .header-container main aside div h3 {
-  margin-bottom: -5px;
+@media (min-width: 1024px) {
+  .header .header-container main aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+  }
+  .header .header-container main aside div h3 {
+    margin-bottom: -5px;
+  }
 }
 .header .header-container main .main__content {
   background-image: url("../../assets//images/hero-bg-2.svg");
@@ -2890,6 +2955,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   height: 542px;
 }
 .header .header-container main .main__content h1 {
