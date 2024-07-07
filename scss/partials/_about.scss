@@ -2,16 +2,37 @@
 @import "./variables";
 
 .about {
-  width: calc(100% - 186px);
-  margin: 0 93px 0 93px;
+  @include xs {
+    width: calc(100% - 50px);
+    margin: 0 25px 0 25px;
+  }
+  @include md {
+    width: calc(100% - 186px);
+    margin: 0 93px 0 93px;
+  }
 
   .about-container {
     max-width: 1366px;
     margin-left: auto;
     margin-right: auto;
     background-color: #fff;
-    @include displayProperty(row, center, space-between, 200px);
-    padding-left: 72px;
+    @include xs {
+      @include displayProperty(column-reverse, center, center, 20px);
+      padding: 15px;
+    }
+    @include sm {
+      @include displayProperty(column-reverse, center, center, 50px);
+      padding: 50px;
+    }
+    @include lg {
+      @include displayProperty(row, center, space-between, 10px);
+      padding: 20px 0 20px 30px;
+    }
+    @include xl {
+      @include displayProperty(row, center, space-between, 50px);
+      padding: 0;
+      padding-left: 72px;
+    }
     border-radius: 12px;
 
     div {
@@ -28,12 +49,31 @@
 
       button {
         margin-top: 30px;
+        @include primaryButton(18px, 16px, 18px, 16px);
       }
     }
 
     img {
-      width: 523px;
-      height: 420px;
+      @include xs {
+        width: 323px;
+        height: 220px;
+      }
+      @include sm {
+        width: 423px;
+        height: 320px;
+      }
+      @include md {
+        width: 523px;
+        height: 420px;
+      }
+      @include lg {
+        width: 323px;
+        height: 220px;
+      }
+      @include xl {
+        width: 523px;
+        height: 420px;
+      }
     }
   }
 }

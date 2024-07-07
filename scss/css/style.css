@@ -11907,22 +11907,65 @@ body {
   }
 }
 
-.about {
-  width: calc(100% - 186px);
-  margin: 0 93px 0 93px;
+@media (min-width: 0) {
+  .about {
+    width: calc(100% - 50px);
+    margin: 0 25px 0 25px;
+  }
+}
+@media (min-width: 768px) {
+  .about {
+    width: calc(100% - 186px);
+    margin: 0 93px 0 93px;
+  }
 }
 .about .about-container {
   max-width: 1366px;
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 200px;
-  padding-left: 72px;
   border-radius: 12px;
+}
+@media (min-width: 0) {
+  .about .about-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+  }
+}
+@media (min-width: 640px) {
+  .about .about-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .about .about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px 0 20px 30px;
+  }
+}
+@media (min-width: 1280px) {
+  .about .about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0;
+    padding-left: 72px;
+  }
 }
 .about .about-container div h4 {
   margin: 0px 0 10px 0;
@@ -11933,10 +11976,40 @@ body {
 }
 .about .about-container div button {
   margin-top: 30px;
+  background-color: #2042b6;
+  padding: 18px 16px 18px 16px;
+  border: none;
+  border-radius: 9999px;
 }
-.about .about-container img {
-  width: 523px;
-  height: 420px;
+@media (min-width: 0) {
+  .about .about-container img {
+    width: 323px;
+    height: 220px;
+  }
+}
+@media (min-width: 640px) {
+  .about .about-container img {
+    width: 423px;
+    height: 320px;
+  }
+}
+@media (min-width: 768px) {
+  .about .about-container img {
+    width: 523px;
+    height: 420px;
+  }
+}
+@media (min-width: 1024px) {
+  .about .about-container img {
+    width: 323px;
+    height: 220px;
+  }
+}
+@media (min-width: 1280px) {
+  .about .about-container img {
+    width: 523px;
+    height: 420px;
+  }
 }
 
 @font-face {
