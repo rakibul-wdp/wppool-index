@@ -3,12 +3,86 @@
 
 .footer {
   background-color: $secondary-deep-color;
-  @include displayProperty(row, center, space-between, 83px);
   padding: 77px 93px 73px 93px;
 
-  .footer__description {
-    h3 {
-      margin-bottom: 278px;
+  .footer__main {
+    @include xs {
+      @include displayProperty(column, center, center, 20px);
+    }
+    @include md {
+      @include displayProperty(row, flex-start, space-between, 20px);
+    }
+    @include lg {
+      @include displayProperty(row, flex-start, space-between, 50px);
+    }
+    @include xl {
+      @include displayProperty(row, flex-start, space-between, 83px);
+    }
+
+    .footer__link {
+      @include md {
+        width: 60%;
+      }
+      @include lg {
+        width: 35%;
+      }
+      @include xl {
+        width: 22%;
+      }
+      @include breakpoint(1400px) {
+        width: 17%;
+      }
+
+      p {
+        margin-bottom: 16px;
+      }
+
+      ul {
+        li {
+          list-style-type: none;
+          margin-bottom: 10px;
+
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .footer__address {
+      margin-left: 33px;
+
+      div {
+        p {
+          color: #191618;
+        }
+
+        .footer_address--details {
+          margin: 8px 0 30px 0;
+        }
+      }
+
+      hr {
+        border: 0.1px solid #9fa0a1;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .footer__bottom {
+    @include xs {
+      width: 100%;
+      margin-top: 20px;
+    }
+    @include sm {
+      width: 70%;
+    }
+    @include md {
+      margin-top: 0;
+    }
+    @include lg {
+      width: 55%;
+      margin-top: -50px;
     }
   }
 }
