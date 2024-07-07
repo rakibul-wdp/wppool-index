@@ -11,32 +11,114 @@
     margin-left: auto;
     margin-right: auto;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    padding: 0 65px 20px 23px;
+    @include xs {
+      padding: 20px 23px 20px 23px;
+      @include displayProperty(column, center, space-between, 20px);
+    }
+    @include xl {
+      padding: 20px 65px 20px 23px;
+    }
+
+    @include lg {
+      @include displayProperty(row, center, space-between, 24px);
+    }
 
     aside {
-      background-color: #eff3f6;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      @include xs {
+        background-color: #eff3f6;
+        width: 100%;
+        @include displayProperty(column, center, center, 20px);
+        padding: 7px 8px 8px 8px;
+        border-radius: 14px;
 
-      button {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        button {
+          background-color: #eff3f6;
+          width: 100%;
+          @include displayProperty(row, center, space-between, 0);
+          border: none;
+          padding-left: 10px;
+          padding-right: 10px;
+
+          p {
+            color: #647888;
+          }
+
+          span {
+            color: #647888;
+          }
+        }
+
+        #chart__aside--first-btn {
+          background-color: $primary-color;
+          padding: 13px 12.16px 12px 10px;
+          margin-bottom: -12px;
+          border: none;
+          border-radius: 6px;
+          box-shadow: 0px 24px 24px 0px #0000001f;
+
+          p {
+            color: #fff;
+          }
+
+          span {
+            color: #fff;
+          }
+        }
+      }
+
+      @include lg {
+        background-color: #eff3f6;
+        width: 100%;
+        @include displayProperty(column, center, center, 33px);
+        padding: 7px 8px 395px 8px;
+        border-radius: 14px;
+
+        button {
+          background-color: #eff3f6;
+          width: 100%;
+          @include displayProperty(row, center, space-between, 0);
+          border: none;
+          padding-left: 10px;
+          padding-right: 10px;
+
+          p {
+            color: #647888;
+          }
+
+          span {
+            color: #647888;
+          }
+        }
+
+        #chart__aside--first-btn {
+          background-color: $primary-color;
+          padding: 13px 12.16px 12px 10px;
+          margin-bottom: -12px;
+          border: none;
+          border-radius: 6px;
+          box-shadow: 0px 24px 24px 0px #0000001f;
+
+          p {
+            color: #fff;
+          }
+
+          span {
+            color: #fff;
+          }
+        }
       }
     }
 
     .chart__main {
+      width: 100%;
+
       .chart__main_title {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 4px;
+        @include xs {
+          @include displayProperty(row, center, center, 4px);
+        }
+        @include lg {
+          @include displayProperty(row, center, flex-start, 4px);
+        }
 
         h3 {
           color: #191618;
@@ -44,75 +126,158 @@
       }
 
       .chart__main_index {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
+        @include xs {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-gap: 20px;
+        }
+        @include sm {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 20px;
+        }
+        @include lg {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 20px;
+        }
+        @include breakpoint(1100px) {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-gap: 20px;
+        }
         padding-top: 17px;
         padding-bottom: 19px;
 
         div {
           background-color: $secondary-light-color;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
+          @include displayProperty(row, center, space-between, 0);
           border-radius: 6px;
           padding: 10px 10px 10px 14px;
 
           div {
+            padding-right: 0;
+
             p {
               width: 95%;
               text-align: end;
             }
 
-            span {
-              display: inline-block;
-              width: 4px;
+            hr {
+              margin-left: 8px;
               height: 30px;
-              color: #fc714d;
+              border: 4px solid #fc714d;
               border-radius: 1px;
+            }
+          }
+        }
+
+        #chart__main--index-2 {
+          h4 {
+            color: #615de3;
+          }
+          div {
+            hr {
+              border-color: #615de3;
+            }
+          }
+        }
+
+        #chart__main--index-3 {
+          h4 {
+            color: #7ca63a;
+          }
+          div {
+            hr {
+              border-color: #7ca63a;
+            }
+          }
+        }
+
+        #chart__main--index-4 {
+          h4 {
+            color: #6f34a1;
+          }
+          div {
+            hr {
+              border-color: #6f34a1;
             }
           }
         }
       }
 
       .chart__main_handle {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include xs {
+          @include displayProperty(column, center, center, 10px);
+        }
+        @include md {
+          @include displayProperty(row, center, space-between, 0);
+        }
+
         padding-bottom: 19px;
 
         .chart__main_handle-large {
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          @include displayProperty(row, center, center, 13px);
 
           button {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            @include xs {
+              @include displayProperty(row, center, space-between, 80px);
+            }
+            @include md {
+              @include displayProperty(row, center, space-between, 100px);
+            }
+            @include lg {
+              @include displayProperty(row, center, space-between, 60px);
+            }
+            @include breakpoint(1100px) {
+              @include displayProperty(row, center, space-between, 106px);
+            }
+
+            @include primaryButton(9px, 12px, 9px, 12px);
+            cursor: pointer;
+
+            p {
+              color: #fff;
+            }
           }
         }
 
         .chart__main_handle-small {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
+          background-color: #eff3f6;
+          @include displayProperty(row, center, space-between, 20px);
+          padding: 3px 13px 3px 52px;
+          border-radius: 9999px;
+
+          button {
+            border: none;
+
+            p {
+              color: #748da1;
+            }
+          }
+
+          #chart__main_handle-small-active-btn {
+            @include primaryButton(8px, 9px, 8px, 9px);
+
+            p {
+              color: #fff;
+            }
+          }
         }
       }
 
       .chart__main_visual {
+        #myChart {
+          max-width: 100%;
+        }
+
         div {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 12px;
+          margin-top: 26px;
+          @include displayProperty(row, center, center, 12px);
 
           div {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 5px;
+            margin-top: 0;
+            @include displayProperty(row, center, center, 5px);
 
             span {
               display: inline-block;
