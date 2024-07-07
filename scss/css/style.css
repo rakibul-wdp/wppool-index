@@ -7518,11 +7518,35 @@ body {
 }
 .future .future-container main {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
   text-align: center;
   align-items: center;
   justify-content: center;
+}
+@media (min-width: 0) {
+  .future .future-container main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 500px) {
+  .future .future-container main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .future .future-container main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .future .future-container main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1280px) {
+  .future .future-container main {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 .future .future-container main div {
   background-color: #fff;
