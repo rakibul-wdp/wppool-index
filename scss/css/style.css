@@ -6051,6 +6051,7 @@ body {
   margin-bottom: 52px;
 }
 .companies .companies-main-container .companies__main .companies__header div {
+  width: 50%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -6063,14 +6064,51 @@ body {
 }
 .companies .companies-main-container .companies__main .companies__header div input {
   border: none;
+  outline: none;
   background-color: #f3f3f3;
 }
+@media (min-width: 0) {
+  .companies .companies-main-container .companies__main .companies__header div input {
+    width: 50%;
+  }
+}
+@media (min-width: 640px) {
+  .companies .companies-main-container .companies__main .companies__header div input {
+    width: 100%;
+  }
+}
 .companies .companies-main-container .companies__main .companies__table {
-  height: 25vh;
+  height: 62.5vh;
   overflow-y: auto;
+}
+.companies .companies-main-container .companies__main .companies__table {
+  scrollbar-color: #2042b6;
+  scrollbar-width: thin;
+}
+.companies .companies-main-container .companies__main .companies__table::-webkit-scrollbar {
+  width: 1.5rem;
+}
+.companies .companies-main-container .companies__main .companies__table::-webkit-scrollbar-track {
+  background-color: #2042b6;
+}
+.companies .companies-main-container .companies__main .companies__table::-webkit-scrollbar-thumb {
+  background: #2042b6;
+  border: 5px solid transparent;
+  border-radius: 9px;
+  background-clip: content-box;
 }
 .companies .companies-main-container .companies__main .companies__table table {
   width: 100%;
+  border-collapse: collapse;
+}
+.companies .companies-main-container .companies__main .companies__table table tr:nth-child(even) {
+  background-color: #f3f3f3;
+  border-radius: 6px;
+}
+.companies .companies-main-container .companies__main .companies__table table tr th,
+.companies .companies-main-container .companies__main .companies__table table tr td {
+  padding: 15px 43px 14px 15px;
+  border: none;
 }
 .companies .companies-main-container .companies__main .companies__table table tr th button {
   display: flex;
@@ -6080,12 +6118,35 @@ body {
   gap: 10px;
   border: none;
 }
-.companies .companies__buttons {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
+@media (min-width: 0) {
+  .companies .companies__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+}
+@media (min-width: 640px) {
+  .companies .companies__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+}
+.companies .companies__buttons > :first-child {
+  background-color: #2042b6;
+  padding: 18px 18px 18px 18px;
+  border: none;
+  border-radius: 9999px;
+}
+.companies .companies__buttons > :last-child {
+  background-color: #2042b6;
+  padding: 18px 31px 18px 31px;
+  border: none;
+  border-radius: 9999px;
 }
 
 @font-face {
