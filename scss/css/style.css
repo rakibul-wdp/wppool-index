@@ -8913,7 +8913,7 @@ body {
 @media (min-width: 0) {
   .carousel-section {
     width: calc(100% - 50px);
-    margin: 0 25px 191px 25px;
+    margin: 0 25px 100px 25px;
   }
 }
 @media (min-width: 768px) {
@@ -10480,9 +10480,17 @@ body {
   }
 }
 
-.stories {
-  width: calc(100% - 186px);
-  margin: 0 93px 0 93px;
+@media (min-width: 0) {
+  .stories {
+    width: calc(100% - 50px);
+    margin: 0 25px 0 25px;
+  }
+}
+@media (min-width: 768px) {
+  .stories {
+    width: calc(100% - 186px);
+    margin: 0 93px 0 93px;
+  }
 }
 .stories .stories-container {
   max-width: 1366px;
@@ -10497,9 +10505,23 @@ body {
 }
 .stories .stories-container main {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   grid-gap: 88px 20px;
+}
+@media (min-width: 0) {
+  .stories .stories-container main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 640px) {
+  .stories .stories-container main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .stories .stories-container main {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .stories .stories-container main div {
   background-color: #fff;

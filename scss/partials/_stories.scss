@@ -2,8 +2,14 @@
 @import "./variables";
 
 .stories {
-  width: calc(100% - 186px);
-  margin: 0 93px 0 93px;
+  @include xs {
+    width: calc(100% - 50px);
+    margin: 0 25px 0 25px;
+  }
+  @include md {
+    width: calc(100% - 186px);
+    margin: 0 93px 0 93px;
+  }
 
   .stories-container {
     max-width: 1366px;
@@ -20,7 +26,15 @@
 
     main {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      @include xs {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      @include sm {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include lg {
+        grid-template-columns: repeat(3, 1fr);
+      }
       justify-content: center;
       grid-gap: 88px 20px;
 
