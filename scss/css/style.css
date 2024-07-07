@@ -625,40 +625,44 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.header .header-container nav {
-  width: calc(100% - 100px);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px 30px 8px 18px;
+.header .header-container .navbar-container {
+  width: 100%;
   border-radius: 6px;
   position: fixed;
   top: 25px;
   left: 50px;
   z-index: 9;
 }
-.header .header-container nav .wppool-logo {
+.header .header-container .navbar-container nav {
+  max-width: 1366px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 8px 30px 8px 18px;
+}
+.header .header-container .navbar-container nav .wppool-logo {
   width: 200.52px;
   height: 34.63px;
 }
-.header .header-container nav div {
+.header .header-container .navbar-container nav div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 12px;
 }
-.header .header-container nav .responsive-menu {
+.header .header-container .navbar-container nav .responsive-menu {
   display: none;
   background-color: #fff;
   padding: 28px 25.22px 38px 35px;
   border-radius: 18px;
   position: fixed;
-  top: 26px;
+  top: 27px;
   right: 27px;
   z-index: 10;
 }
-.header .header-container nav .responsive-menu .responsive-menu-header {
+.header .header-container .navbar-container nav .responsive-menu .responsive-menu-header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -666,98 +670,100 @@ body {
   gap: 12px;
   margin-bottom: 33px;
 }
-.header .header-container nav .responsive-menu .responsive-menu-header .responsive-menu-share {
+.header .header-container .navbar-container nav .responsive-menu .responsive-menu-header .responsive-menu-share {
   background-color: #afcd80;
   border-radius: 100%;
   padding: 14px;
 }
-.header .header-container nav .responsive-menu .responsive-menu-header .primary-button {
+.header .header-container .navbar-container nav .responsive-menu .responsive-menu-header .primary-button {
   background-color: #2042b6;
   padding: 17px 16px 17px 16px;
   border: none;
   border-radius: 9999px;
 }
-.header .header-container nav .responsive-menu .responsive-menu-header #menu-cross-btn {
+.header .header-container .navbar-container nav .responsive-menu .responsive-menu-header #menu-cross-btn {
   background-color: #fff;
   cursor: pointer;
   margin-left: 14.22px;
   border: none;
 }
-.header .header-container nav .responsive-menu .responsive-menu-items ul {
+.header .header-container .navbar-container nav .responsive-menu .responsive-menu-items ul {
   list-style: none;
 }
-.header .header-container nav .responsive-menu .responsive-menu-items ul li {
+.header .header-container .navbar-container nav .responsive-menu .responsive-menu-items ul li {
   margin-bottom: 24px;
 }
-.header .header-container nav .responsive-menu .responsive-menu-items ul li .responsive-menu-item-last {
+.header .header-container .navbar-container nav .responsive-menu .responsive-menu-items ul li .responsive-menu-item-last {
   margin-top: 12px;
 }
-.header .header-container nav .responsive-menu .responsive-menu-items ul li a {
+.header .header-container .navbar-container nav .responsive-menu .responsive-menu-items ul li a {
   text-decoration: none;
 }
-.header .header-container nav .responsive-menu.show {
+.header .header-container .navbar-container nav .responsive-menu.show {
   display: block;
 }
-.header .header-container .bg-white {
-  background-color: #f3f3f3;
-}
-.header .header-container .bg-white .wppool-logo {
+.header .header-container .navbar-container .bg-white .wppool-logo {
   display: none;
 }
-.header .header-container .bg-white .nav-share-icon {
+.header .header-container .navbar-container .bg-white .nav-share-icon {
   display: none;
 }
-.header .header-container .bg-white .nav-share-icon-dark {
+.header .header-container .navbar-container .bg-white .nav-share-icon-dark {
   border: 1px solid #afcd80;
   border-radius: 100%;
   padding: 14px;
 }
-.header .header-container .bg-white .nav-btn {
+.header .header-container .navbar-container .bg-white .nav-btn {
   background-color: transparent;
   padding: 17px 16px;
   border: 1px solid #115cd9;
   border-radius: 124px;
 }
-.header .header-container .bg-white .nav-btn p {
+.header .header-container .navbar-container .bg-white .nav-btn p {
   color: #191618;
 }
-.header .header-container .bg-white .nav-menu-btn {
+.header .header-container .navbar-container .bg-white .nav-menu-btn {
   background-color: transparent;
   border: none;
   margin-left: 12px;
   cursor: pointer;
 }
-.header .header-container .bg-white .nav-menu-btn .menu-btn-icon {
+.header .header-container .navbar-container .bg-white .nav-menu-btn .menu-btn-icon {
   display: none;
 }
-.header .header-container .bg-transparent {
-  background-color: transparent;
-}
-.header .header-container .bg-transparent .wppool-logo-dark {
+.header .header-container .navbar-container .bg-transparent .wppool-logo-dark {
   display: none;
 }
-.header .header-container .bg-transparent .nav-share-icon {
+.header .header-container .navbar-container .bg-transparent .nav-share-icon {
   border: 1px solid #ffffff;
   border-radius: 100%;
   padding: 14px;
 }
-.header .header-container .bg-transparent .nav-share-icon-dark {
+.header .header-container .navbar-container .bg-transparent .nav-share-icon-dark {
   display: none;
 }
-.header .header-container .bg-transparent .nav-btn {
+.header .header-container .navbar-container .bg-transparent .nav-btn {
   background-color: transparent;
   padding: 17px 16px;
   border: 1px solid #ffffff;
   border-radius: 124px;
 }
-.header .header-container .bg-transparent .nav-menu-btn {
+.header .header-container .navbar-container .bg-transparent .nav-menu-btn {
   background-color: transparent;
   border: none;
   margin-left: 12px;
   cursor: pointer;
 }
-.header .header-container .bg-transparent .nav-menu-btn .menu-btn-icon-dark {
+.header .header-container .navbar-container .bg-transparent .nav-menu-btn .menu-btn-icon-dark {
   display: none;
+}
+.header .header-container .bg-white-outer {
+  width: calc(100% - 100px);
+  background-color: #f3f3f3;
+}
+.header .header-container .bg-transparent-outer {
+  width: calc(100% - 100px);
+  background-color: transparent;
 }
 .header .header-container main {
   background-image: url("../../assets/images/hero-bg-1.png");

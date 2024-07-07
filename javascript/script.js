@@ -1,14 +1,21 @@
 // navbar
 document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.getElementById("navbar");
+  const navbarContainer = document.getElementById("navbar-container");
 
   const handleScroll = () => {
     if (window.scrollY > 10) {
       navbar.classList.add("bg-white");
       navbar.classList.remove("bg-transparent");
+
+      navbarContainer.classList.add("bg-white-outer");
+      navbarContainer.classList.remove("bg-transparent-outer");
     } else {
       navbar.classList.add("bg-transparent");
       navbar.classList.remove("bg-white");
+
+      navbarContainer.classList.add("bg-transparent-outer");
+      navbarContainer.classList.remove("bg-white-outer");
     }
   };
 
