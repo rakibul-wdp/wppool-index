@@ -2,10 +2,21 @@
 @import "./variables";
 
 .carousel-section {
-  width: calc(100% - 186px);
-  margin: 0 93px 191px 93px;
+  @include xs {
+    width: calc(100% - 50px);
+    margin: 0 25px 191px 25px;
+  }
+  @include md {
+    width: calc(100% - 186px);
+    margin: 0 93px 191px 93px;
+  }
 
   .carousel-container {
+    background-image: url("../../assets/images/carousel-bg.svg");
+    background-size: 616px 595.35px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
     max-width: 1366px;
     margin-left: auto;
     margin-right: auto;
@@ -15,10 +26,13 @@
 
       button {
         @include displayProperty(row, center, space-between, 0);
-        background-color: $primary-color;
-        border: none;
+        @include primaryButton(15px, 24px, 14px, 22px);
         margin-top: 20px;
         margin-bottom: 15px;
+
+        h2 {
+          margin-right: 46px;
+        }
       }
     }
 
@@ -27,15 +41,33 @@
       position: relative;
 
       .carousel-arrow {
-        top: 88%;
-        height: 14.15px;
-        width: 15.74px;
+        @include xs {
+          top: 70%;
+        }
+        @include sm {
+          top: 60%;
+        }
+        @include md {
+          top: 70%;
+        }
+        @include lg {
+          top: 75%;
+        }
+        @include xl {
+          top: 78%;
+        }
+        @include breakpoint(1400px) {
+          top: 83%;
+        }
+        width: 56px;
+        height: 56px;
         cursor: pointer;
         font-size: 1.25rem;
         position: absolute;
         text-align: center;
         line-height: 50px;
-        background: #fff;
+        background-color: #fff;
+        padding: 20px;
         border-radius: 50%;
         box-shadow: 0px 36px 36px 0px #0000001f;
       }
@@ -44,7 +76,7 @@
       }
       .right-arrow {
         transform: rotate(180deg);
-        left: 80px;
+        left: 85px;
       }
 
       .carousel {
@@ -58,7 +90,7 @@
         scroll-behavior: smooth;
         scrollbar-width: none;
 
-        .carousel::-webkit-scrollbar {
+        &::-webkit-scrollbar {
           display: none;
         }
         .carousel.no-transition {
@@ -85,24 +117,56 @@
           flex-direction: column;
           border-radius: 8px;
         }
+
+        li {
+          list-style: none;
+        }
+
+        li::marker {
+          content: "";
+        }
+
         .card .img img {
-          width: 580px;
-          height: 326px;
+          width: 100%;
           border-radius: 6px;
           object-fit: cover;
         }
       }
 
       .carousel-control {
-        @include displayProperty(row, center, space-between, 0);
-        padding: 0 163px;
+        @include xs {
+          @include displayProperty(column, center, space-between, 0);
+          padding-left: 150px;
+        }
+        @include sm {
+          @include displayProperty(column, center, space-between, 0);
+          padding-left: 100px;
+        }
+        @include xs {
+          @include displayProperty(column, center, space-between, 0);
+          padding-left: 80px;
+        }
+        @include lg {
+          @include displayProperty(row, center, space-between, 0);
+          padding: 0 163px;
+        }
 
         div {
-          @include displayProperty(row, center, center, 0);
+          @include displayProperty(row, center, center, 10px);
+          margin-bottom: 0;
+
+          button {
+            background-color: #fff;
+          }
 
           p {
             color: black;
           }
+        }
+
+        button {
+          @include primaryButton(23px, 20px, 22px, 20px);
+          margin-top: 0;
         }
       }
     }

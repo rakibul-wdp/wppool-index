@@ -84,7 +84,6 @@ const arrowBtns = document.querySelectorAll(".wrapper .carousel-arrow");
 const carouselChildrens = [...carousel.children];
 
 let isDragging = false,
-  isAutoPlay = true,
   startX,
   startScrollLeft,
   timeoutId;
@@ -105,7 +104,7 @@ carouselChildrens.slice(0, cardPerView).forEach((card) => {
   carousel.insertAdjacentHTML("beforeend", card.outerHTML);
 });
 
-// Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
+// Scroll the carousel at appropriate position to hide first few duplicate cards on Firefox
 carousel.classList.add("no-transition");
 carousel.scrollLeft = carousel.offsetWidth;
 carousel.classList.remove("no-transition");
@@ -155,19 +154,12 @@ const infiniteScroll = () => {
 
   // Clear existing timeout & start autoplay if mouse is not hovering over carousel
   clearTimeout(timeoutId);
-  if (!wrapper.matches(":hover")) autoPlay();
+  if (!wrapper.matches(":hover"));
 };
-
-const autoPlay = () => {
-  if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
-  // Autoplay the carousel after every 2500 ms
-  timeoutId = setTimeout(() => (carousel.scrollLeft += firstCardWidth), 2500);
-};
-autoPlay();
 
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
-wrapper.addEventListener("mouseleave", autoPlay);
+wrapper.addEventListener("mouseleave");
