@@ -22,7 +22,7 @@
         margin-bottom: 52px;
 
         div {
-          @include displayProperty(row, center, start, 9px);
+          @include displayProperty(row, center, flex-start, 9px);
           border: 1px solid #dadada;
           border-radius: 8px;
           padding: 17px 0px 17px 19px;
